@@ -1,0 +1,6 @@
+framework module Pods_TripManagerApp {
+  umbrella header "Pods-TripManagerApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

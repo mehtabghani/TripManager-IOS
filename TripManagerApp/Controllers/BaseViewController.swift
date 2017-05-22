@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BaseController: UIViewController {
+class BaseViewController: UIViewController {
+    
+   // var baseService: BaseService
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,10 @@ class BaseController: UIViewController {
     
     func getViewName() -> String {
         return "MainView";
+    }
+    
+    func loadService() {
+    
     }
 
 }

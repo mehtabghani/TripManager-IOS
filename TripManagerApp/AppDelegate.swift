@@ -12,16 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var vcLogin: LoginViewController?
+    var navController: UINavigationController?
+    
+    
+// MARK: App Events
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let controller = MainViewController(nibName: "MainViewController", bundle: nil)
-
-        window?.rootViewController = controller
         
+        //let controller = MainViewController(nibName: "MainView", bundle: nil)
+       // window?.rootViewController = controller
+        
+        showLoginController()
+
         window?.makeKeyAndVisible()
         return true
     }
@@ -48,6 +54,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+// MARK: Show Contoller Methods
+    
+    func showViewControllerUsingNavigationController(viewController controller: BaseViewController) {
+        
+    }
+    
+    
+    func showViewControllerController(viewController controller: BaseViewController) {
+        window?.rootViewController = controller
+    }
+    
+    func showLoginController() {
+        let controller = LoginViewController(nibName: "LoginView", bundle: nil)
+        showViewControllerController(viewController: controller)
+    }
 
 }
 
