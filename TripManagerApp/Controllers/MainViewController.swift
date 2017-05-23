@@ -10,10 +10,15 @@ import UIKit
 
 class MainViewController: BaseViewController {
 
+    @IBOutlet weak var _profileImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        showLoginIfRequired()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +26,21 @@ class MainViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+  
+    func showLoginIfRequired() {
+        
+        guard  AppConfig.sharedInstance.getToken() == nil else {
+            setup()
+            return;
+        }
+        
+        AppDelegate.getInstance().showLoginController();
+        
+    }
+    
+    func setup() {
+        _profileImageView.layer.cornerRadius = _profileImageView.frame.height/2
+        _profileImageView.layer.masksToBounds = true
 
+    }
 }

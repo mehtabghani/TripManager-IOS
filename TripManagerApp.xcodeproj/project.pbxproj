@@ -12,9 +12,6 @@
 		1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DB1AE1ECEBDCC00600AA6 /* LaunchScreen.storyboard */; };
 		1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */; };
 		1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */; };
-		1B1DB1D21ECF048300600AA6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1D01ECF048300600AA6 /* BaseView.swift */; };
-		1B1DB1D71ECF04A900600AA6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1D51ECF04A900600AA6 /* MainView.swift */; };
-		1B1DB1D81ECF04A900600AA6 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DB1D61ECF04A900600AA6 /* MainView.xib */; };
 		1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */; };
 		1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBB09D51ED2FAA400F73B77 /* LoginView.xib */; };
 		1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D71ED30C4700F73B77 /* LoginService.swift */; };
@@ -22,6 +19,10 @@
 		1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */; };
 		1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBB09DE1ED3287000F73B77 /* Alamofire.framework */; };
 		1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */; };
+		1BC1AECB1ED44B0600869AA1 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AECA1ED44B0600869AA1 /* AppConfig.swift */; };
+		1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */; };
+		1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1AED01ED4544800869AA1 /* SignUpView.xib */; };
+		1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1AED21ED462D000869AA1 /* MainView.xib */; };
 		AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +34,6 @@
 		1B1DB1B11ECEBDCC00600AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		1B1DB1D01ECF048300600AA6 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		1B1DB1D51ECF04A900600AA6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		1B1DB1D61ECF04A900600AA6 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BBB09D51ED2FAA400F73B77 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		1BBB09D71ED30C4700F73B77 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -43,6 +41,10 @@
 		1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1BBB09DE1ED3287000F73B77 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		1BC1AECA1ED44B0600869AA1 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1BC1AED01ED4544800869AA1 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		1BC1AED21ED462D000869AA1 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		43BE7438396CA89A5D83D52C /* Pods-TripManagerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.release.xcconfig"; sourceTree = "<group>"; };
 		5ACA13B3D4F2F9037C250142 /* Pods-TripManagerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripManagerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1B1DB1A51ECEBDCB00600AA6 /* AppDelegate.swift */,
+				1BC1AECA1ED44B0600869AA1 /* AppConfig.swift */,
 				1BBB09DB1ED313CF00F73B77 /* Components */,
 				1B1DB1BB1ECECF4D00600AA6 /* Controllers */,
 				1B1DB1C31ECED07B00600AA6 /* Controls */,
@@ -103,6 +106,7 @@
 				1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */,
 				1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */,
 				1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */,
+				1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,9 +114,9 @@
 		1B1DB1C01ECECF7400600AA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1B1DB1D41ECF04A900600AA6 /* MainView */,
+				1BC1AED21ED462D000869AA1 /* MainView.xib */,
+				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
 				1BBB09D51ED2FAA400F73B77 /* LoginView.xib */,
-				1B1DB1D01ECF048300600AA6 /* BaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,15 +142,6 @@
 			children = (
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		1B1DB1D41ECF04A900600AA6 /* MainView */ = {
-			isa = PBXGroup;
-			children = (
-				1B1DB1D51ECF04A900600AA6 /* MainView.swift */,
-				1B1DB1D61ECF04A900600AA6 /* MainView.xib */,
-			);
-			path = MainView;
 			sourceTree = "<group>";
 		};
 		1BBB09DB1ED313CF00F73B77 /* Components */ = {
@@ -246,9 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1DB1D81ECF04A900600AA6 /* MainView.xib in Resources */,
 				1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */,
 				1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */,
+				1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */,
+				1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */,
 				1B1DB1AD1ECEBDCC00600AA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,15 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC1AECB1ED44B0600869AA1 /* AppConfig.swift in Sources */,
 				1BBB09DA1ED30C5500F73B77 /* BaseService.swift in Sources */,
 				1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */,
 				1B1DB1A61ECEBDCB00600AA6 /* AppDelegate.swift in Sources */,
+				1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */,
 				1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */,
 				1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
-				1B1DB1D71ECF04A900600AA6 /* MainView.swift in Sources */,
-				1B1DB1D21ECF048300600AA6 /* BaseView.swift in Sources */,
 				1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="TripManagerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="_confirmPasswordField" destination="goe-xi-ouk" id="W58-Kb-jWI"/>
+                <outlet property="_passwordField" destination="rmG-nm-gei" id="HD2-VX-B9a"/>
+                <outlet property="_userNameField" destination="y6k-mg-9HC" id="u34-h0-JV3"/>
+                <outlet property="view" destination="8sI-NR-CNu" id="Arr-eF-gja"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8sI-NR-CNu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mehtab" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6k-mg-9HC" customClass="CustomTextField" customModule="TripManagerApp" customModuleProvider="target">
+                    <rect key="frame" x="30" y="193" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qwerty" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmG-nm-gei" customClass="CustomTextField" customModule="TripManagerApp" customModuleProvider="target">
+                    <rect key="frame" x="30" y="243" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52T-EA-bTq">
+                    <rect key="frame" x="117" y="44" width="141" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.075596950950000005" green="0.17856922750000001" blue="0.81859594579999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZP-WH-OeZ">
+                    <rect key="frame" x="157" y="345" width="60" height="30"/>
+                    <state key="normal" title="SIGN UP"/>
+                    <connections>
+                        <action selector="onSingUp:" destination="-1" eventType="touchUpInside" id="YVv-ek-h7l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCK-IR-VbB">
+                    <rect key="frame" x="314" y="624" width="45" height="30"/>
+                    <state key="normal" title="LOGIN"/>
+                    <connections>
+                        <action selector="onLogin:" destination="-1" eventType="touchUpInside" id="j95-6v-41w"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qwerty" borderStyle="roundedRect" placeholder="CONFIRM PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goe-xi-ouk" customClass="CustomTextField" customModule="TripManagerApp" customModuleProvider="target">
+                    <rect key="frame" x="30" y="294" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.6284831166" green="0.76208877559999999" blue="0.92309254409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rmG-nm-gei" secondAttribute="trailing" constant="30" id="2XK-ts-JQv"/>
+                <constraint firstItem="goe-xi-ouk" firstAttribute="leading" secondItem="8sI-NR-CNu" secondAttribute="leading" constant="30" id="2qd-AO-1if"/>
+                <constraint firstAttribute="trailing" secondItem="hCK-IR-VbB" secondAttribute="trailing" constant="16" id="Cwl-LG-Upt"/>
+                <constraint firstAttribute="trailing" secondItem="goe-xi-ouk" secondAttribute="trailing" constant="30" id="EBJ-QT-N7e"/>
+                <constraint firstItem="6ZP-WH-OeZ" firstAttribute="top" secondItem="goe-xi-ouk" secondAttribute="bottom" constant="21" id="EEa-CV-N0a"/>
+                <constraint firstItem="y6k-mg-9HC" firstAttribute="leading" secondItem="8sI-NR-CNu" secondAttribute="leading" constant="30" id="NBY-Vb-JAi"/>
+                <constraint firstItem="y6k-mg-9HC" firstAttribute="top" secondItem="52T-EA-bTq" secondAttribute="bottom" constant="120" id="U8r-zN-NVf"/>
+                <constraint firstItem="rmG-nm-gei" firstAttribute="top" secondItem="y6k-mg-9HC" secondAttribute="bottom" constant="20" id="eLk-Gu-wfY"/>
+                <constraint firstItem="goe-xi-ouk" firstAttribute="top" secondItem="rmG-nm-gei" secondAttribute="bottom" constant="21" id="imk-jl-aU5"/>
+                <constraint firstAttribute="trailing" secondItem="y6k-mg-9HC" secondAttribute="trailing" constant="30" id="njo-is-Lqa"/>
+                <constraint firstItem="52T-EA-bTq" firstAttribute="top" secondItem="8sI-NR-CNu" secondAttribute="top" constant="44" id="qen-Uk-QSd"/>
+                <constraint firstAttribute="bottom" secondItem="hCK-IR-VbB" secondAttribute="bottom" constant="13" id="rt6-Ac-D5z"/>
+                <constraint firstItem="rmG-nm-gei" firstAttribute="leading" secondItem="8sI-NR-CNu" secondAttribute="leading" constant="30" id="tgu-F1-DAz"/>
+                <constraint firstItem="6ZP-WH-OeZ" firstAttribute="centerX" secondItem="8sI-NR-CNu" secondAttribute="centerX" id="vo3-mB-b3r"/>
+                <constraint firstItem="52T-EA-bTq" firstAttribute="centerX" secondItem="8sI-NR-CNu" secondAttribute="centerX" id="wwH-9H-P9O"/>
+            </constraints>
+            <point key="canvasLocation" x="-121" y="86"/>
+        </view>
+    </objects>
+</document>

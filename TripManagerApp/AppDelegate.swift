@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navController: UINavigationController?
     
     
+    static func getInstance() -> AppDelegate {
+       return UIApplication.shared.delegate as! AppDelegate
+    }
+    
 // MARK: App Events
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -23,10 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        //let controller = MainViewController(nibName: "MainView", bundle: nil)
-       // window?.rootViewController = controller
+        let controller = MainViewController(nibName: "MainView", bundle: nil)
+        window?.rootViewController = controller
         
-        showLoginController()
+        //showLoginController()
 
         window?.makeKeyAndVisible()
         return true
@@ -67,6 +71,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func showLoginController() {
         let controller = LoginViewController(nibName: "LoginView", bundle: nil)
+        showViewControllerController(viewController: controller)
+    }
+    
+    func showSignUpController() {
+        let controller = SignUpViewController(nibName: "SignUpView", bundle: nil)
         showViewControllerController(viewController: controller)
     }
 
