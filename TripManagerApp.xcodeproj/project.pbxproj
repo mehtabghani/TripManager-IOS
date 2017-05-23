@@ -21,6 +21,7 @@
 		1BBB09DA1ED30C5500F73B77 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D91ED30C5500F73B77 /* BaseService.swift */; };
 		1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */; };
 		1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBB09DE1ED3287000F73B77 /* Alamofire.framework */; };
+		1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */; };
 		AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		1BBB09D91ED30C5500F73B77 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1BBB09DE1ED3287000F73B77 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		43BE7438396CA89A5D83D52C /* Pods-TripManagerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.release.xcconfig"; sourceTree = "<group>"; };
 		5ACA13B3D4F2F9037C250142 /* Pods-TripManagerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripManagerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,14 +82,15 @@
 		1B1DB1A41ECEBDCB00600AA6 /* TripManagerApp */ = {
 			isa = PBXGroup;
 			children = (
-				1BBB09DB1ED313CF00F73B77 /* Components */,
 				1B1DB1A51ECEBDCB00600AA6 /* AppDelegate.swift */,
-				1B1DB1AC1ECEBDCC00600AA6 /* Assets.xcassets */,
+				1BBB09DB1ED313CF00F73B77 /* Components */,
 				1B1DB1BB1ECECF4D00600AA6 /* Controllers */,
 				1B1DB1C31ECED07B00600AA6 /* Controls */,
 				1B1DB1C41ECED07B00600AA6 /* Services */,
 				1B1DB1C51ECED07B00600AA6 /* Utils */,
+				1BC1AEC71ED40C1000869AA1 /* Manager */,
 				1B1DB1C01ECECF7400600AA6 /* Views */,
+				1B1DB1AC1ECEBDCC00600AA6 /* Assets.xcassets */,
 				1B1DB1B11ECEBDCC00600AA6 /* Info.plist */,
 				1B1DB1AE1ECEBDCC00600AA6 /* LaunchScreen.storyboard */,
 			);
@@ -152,6 +155,14 @@
 				1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1BC1AEC71ED40C1000869AA1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		513446C5985A53868BFD1DC2 /* Pods */ = {
@@ -302,6 +313,7 @@
 				1B1DB1A61ECEBDCB00600AA6 /* AppDelegate.swift in Sources */,
 				1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */,
 				1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */,
+				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
 				1B1DB1D71ECF04A900600AA6 /* MainView.swift in Sources */,
 				1B1DB1D21ECF048300600AA6 /* BaseView.swift in Sources */,

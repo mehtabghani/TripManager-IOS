@@ -51,7 +51,7 @@ class LoginViewController: BaseViewController  {
     }
 
     @IBAction func onSignup(_ sender: Any) {
-        
+        showSignUpScreen()
     }
 //MARK: Validation
     
@@ -64,18 +64,27 @@ class LoginViewController: BaseViewController  {
     
     func submitLoginRequest() {
         let service = LoginService();
+   
         
-        let dict:NSDictionary = ["user_name": userName!, "password": password!]
+        let dict: [String: String] = ["user_name": userName!, "password": password!];
         
-        service.postLogin(input: dict, sucess: { (response, error) in
+        service.login(input: dict, completionBlock: { (response, error) in
             
-            if let err = error {
-                print(err)
+            guard error == nil else {
                 return;
             }
             
-            print(response!)
+            print("Response: \(response!)")
+
+            if let res = response as? NSDictionary {
+                var userId = res["user_id"] as? String
+                var accessToken = res["access_token"] as? String
+            }
         })
+    }
+    
+    func showSignUpScreen() {
+    
     }
     
 }

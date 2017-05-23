@@ -15,23 +15,15 @@ class LoginService: BaseService {
   
 
     private let routeLogin: String = "login"
-    typealias completionBlock = ( (_ response:Any?, _ error:Any?) -> () )
     
-
     
-    func postLogin(input: NSDictionary,  sucess: completionBlock) {
+    func login(input: Dictionary<String, Any>,  completionBlock: @escaping completionBlock) {
     
-        sucess("test", nil)
-        
-//        Alamofire.request("https://httpbin.org/get").responseJSON { response in
-//            print(response.request!)  // original URL request
-//            //print(response.response!) // HTTP URL response
-//            //print(response.result!)   // result of response serialization
-//            
-//            if let JSON = response.result.value {
-//                print("JSON: \(JSON)")
-//            }
-//        }
+        httpRequestManager?.postRequest(url: getURL(route: routeLogin), data: input, completionBlock: completionBlock)
+    }
+    
+    func signup(input: Dictionary<String, Any>,  completionBlock: @escaping completionBlock) {
+    
     }
     
     
