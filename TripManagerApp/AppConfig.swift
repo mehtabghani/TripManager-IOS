@@ -13,6 +13,7 @@ class AppConfig: NSObject {
     let kAccesToken:String = "access_token"
     
     static let sharedInstance = AppConfig()
+    
     private override init() {} //This prevents others from using the default '()' initializer for this class.
 
     

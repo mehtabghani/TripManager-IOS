@@ -14,6 +14,8 @@
 		1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */; };
 		1B6B452E1ED55E9C00612EC7 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */; };
 		1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */; };
+		1B6B45351ED5BA5200612EC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45341ED5BA5200612EC7 /* LocationManager.swift */; };
+		1B6B45381ED5BB0300612EC7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */; };
 		1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */; };
 		1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBB09D51ED2FAA400F73B77 /* LoginView.xib */; };
 		1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D71ED30C4700F73B77 /* LoginService.swift */; };
@@ -38,6 +40,8 @@
 		1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 		1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMapView.xib; sourceTree = "<group>"; };
+		1B6B45341ED5BA5200612EC7 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BBB09D51ED2FAA400F73B77 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		1BBB09D71ED30C4700F73B77 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				1BBB09DB1ED313CF00F73B77 /* Components */,
 				1B1DB1BB1ECECF4D00600AA6 /* Controllers */,
 				1B1DB1C31ECED07B00600AA6 /* Controls */,
+				1B6B45361ED5BABB00612EC7 /* Extensions */,
 				1B1DB1C41ECED07B00600AA6 /* Services */,
 				1B1DB1C51ECED07B00600AA6 /* Utils */,
 				1BC1AEC71ED40C1000869AA1 /* Manager */,
@@ -150,6 +155,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		1B6B45361ED5BABB00612EC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1BBB09DB1ED313CF00F73B77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */,
+				1B6B45341ED5BA5200612EC7 /* LocationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -221,6 +235,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9MWU5PC5GV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -319,6 +338,8 @@
 				1B6B452E1ED55E9C00612EC7 /* CustomMapView.swift in Sources */,
 				1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */,
 				1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */,
+				1B6B45351ED5BA5200612EC7 /* LocationManager.swift in Sources */,
+				1B6B45381ED5BB0300612EC7 /* UIViewExtension.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
 				1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */,

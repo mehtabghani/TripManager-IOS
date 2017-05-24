@@ -66,5 +66,8 @@ class MainViewController: BaseViewController {
         _mapView.addSubview(_customMapView)
         _mapView.bringSubview(toFront: _customMapView)
         
+        
+        let manager = LocationManager.sharedInstance
+        
     }
 }

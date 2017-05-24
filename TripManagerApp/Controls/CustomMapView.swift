@@ -9,11 +9,6 @@
 import UIKit
 import MapKit
 
-extension UIView {
-    class func fromNib<T : UIView>() -> T {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-    }
-}
 
 class CustomMapView: UIView {
     
@@ -51,7 +46,11 @@ class CustomMapView: UIView {
         _mapView.mapType = .standard
         
         // 2)
-        let location = CLLocationCoordinate2D(latitude: 24.8615,longitude: 67.0099)
+        var location = CLLocationCoordinate2D(latitude: 24.8615,longitude: 67.0099)
+        
+        if let loc = LocationManager.sharedInstance.getCurrentLocation()  {
+            location = CLLocationCoordinate2D(latitude: loc.coordinate.latitude, longitude: loc.coordinate.longitude)
+        }
         
         // 3)
         let span = MKCoordinateSpanMake(0.05, 0.05)
@@ -69,8 +68,10 @@ class CustomMapView: UIView {
         
     }
     
-    func navigateTo(location cordinates:CLLocationCoordinate2D) {
-        
+    func navigateTo(_ coordinates:CLLocation?) {
+        if let loc = coordinates  {
+           let location = CLLocationCoordinate2D(latitude: loc.coordinate.latitude, longitude: loc.coordinate.longitude)
+        }
     }
     
     
