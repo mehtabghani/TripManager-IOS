@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let controller = MainViewController(nibName: "MainView", bundle: nil)
+ 
         window?.rootViewController = controller
         
         //showLoginController()

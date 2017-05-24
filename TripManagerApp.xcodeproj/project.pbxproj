@@ -12,6 +12,8 @@
 		1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DB1AE1ECEBDCC00600AA6 /* LaunchScreen.storyboard */; };
 		1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */; };
 		1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */; };
+		1B6B452E1ED55E9C00612EC7 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */; };
+		1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */; };
 		1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */; };
 		1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBB09D51ED2FAA400F73B77 /* LoginView.xib */; };
 		1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D71ED30C4700F73B77 /* LoginService.swift */; };
@@ -34,6 +36,8 @@
 		1B1DB1B11ECEBDCC00600AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMapView.xib; sourceTree = "<group>"; };
 		1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BBB09D51ED2FAA400F73B77 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		1BBB09D71ED30C4700F73B77 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				1BC1AED21ED462D000869AA1 /* MainView.xib */,
 				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
 				1BBB09D51ED2FAA400F73B77 /* LoginView.xib */,
+				1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		1B1DB1C31ECED07B00600AA6 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */,
 				1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */,
 				1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */,
+				1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */,
 				1B1DB1AD1ECEBDCC00600AA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +316,7 @@
 				1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */,
 				1B1DB1A61ECEBDCB00600AA6 /* AppDelegate.swift in Sources */,
 				1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */,
+				1B6B452E1ED55E9C00612EC7 /* CustomMapView.swift in Sources */,
 				1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */,
 				1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
