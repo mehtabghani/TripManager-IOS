@@ -16,6 +16,7 @@
 		1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */; };
 		1B6B45351ED5BA5200612EC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45341ED5BA5200612EC7 /* LocationManager.swift */; };
 		1B6B45381ED5BB0300612EC7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */; };
+		1BB4CE161ED6A6B0003505DB /* Signals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB4CE151ED6A6B0003505DB /* Signals.framework */; };
 		1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */; };
 		1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBB09D51ED2FAA400F73B77 /* LoginView.xib */; };
 		1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D71ED30C4700F73B77 /* LoginService.swift */; };
@@ -42,6 +43,8 @@
 		1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMapView.xib; sourceTree = "<group>"; };
 		1B6B45341ED5BA5200612EC7 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		1BB4CE151ED6A6B0003505DB /* Signals.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Signals.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/Signals/Signals.framework"; sourceTree = "<group>"; };
+		1BB4CE191ED6F283003505DB /* Cupertino CA USA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cupertino CA USA.gpx"; sourceTree = "<group>"; };
 		1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BBB09D51ED2FAA400F73B77 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		1BBB09D71ED30C4700F73B77 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB4CE161ED6A6B0003505DB /* Signals.framework in Frameworks */,
 				1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */,
 				AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */,
 			);
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				1B1DB1A41ECEBDCB00600AA6 /* TripManagerApp */,
+				1BB4CE171ED6F11B003505DB /* GPX */,
 				1B1DB1A31ECEBDCB00600AA6 /* Products */,
 				513446C5985A53868BFD1DC2 /* Pods */,
 				CC0611BF5F32015397553A80 /* Frameworks */,
@@ -163,6 +168,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1BB4CE171ED6F11B003505DB /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				1BB4CE191ED6F283003505DB /* Cupertino CA USA.gpx */,
+			);
+			name = GPX;
+			path = TripManagerApp/GPX;
+			sourceTree = "<group>";
+		};
 		1BBB09DB1ED313CF00F73B77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +206,7 @@
 		CC0611BF5F32015397553A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BB4CE151ED6A6B0003505DB /* Signals.framework */,
 				1BBB09DE1ED3287000F73B77 /* Alamofire.framework */,
 				8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */,
 			);

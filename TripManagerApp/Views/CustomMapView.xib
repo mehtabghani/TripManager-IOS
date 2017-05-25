@@ -11,25 +11,25 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMapView" customModule="TripManagerApp" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomMapView" customModule="TripManagerApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <mapView clipsSubviews="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g7g-cf-3l2">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="669"/>
                 </mapView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="g7g-cf-3l2" secondAttribute="trailing" id="2dI-d6-Li9"/>
-                <constraint firstItem="g7g-cf-3l2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JP6-FM-mW4"/>
-                <constraint firstAttribute="bottom" secondItem="g7g-cf-3l2" secondAttribute="bottom" id="KTe-cJ-wHi"/>
-                <constraint firstItem="g7g-cf-3l2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hn6-XV-bFW"/>
+                <constraint firstItem="g7g-cf-3l2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="86a-En-dwq"/>
+                <constraint firstAttribute="trailing" secondItem="g7g-cf-3l2" secondAttribute="trailing" constant="225" id="Ub9-EQ-HBV"/>
+                <constraint firstItem="g7g-cf-3l2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aAv-Nt-MH3"/>
+                <constraint firstAttribute="bottom" secondItem="g7g-cf-3l2" secondAttribute="bottom" constant="-69" id="fsf-UV-5g9"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="_mapView" destination="g7g-cf-3l2" id="bC7-ut-FA2"/>
             </connections>
-            <point key="canvasLocation" x="-224" y="64"/>
+            <point key="canvasLocation" x="-224.5" y="63.5"/>
         </view>
     </objects>
 </document>

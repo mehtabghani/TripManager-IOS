@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import Signals
 
 class MainViewController: BaseViewController {
 
     
    // var _customMapView: CustomMapView?
+    var _manager:LocationManager?
+    var _customMapView: CustomMapView?
+
     
 // MARK: IBOutlet
     @IBOutlet weak var _profileImageView: UIImageView!
     @IBOutlet weak var _mapView: UIView!
-
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,18 +60,29 @@ class MainViewController: BaseViewController {
         _profileImageView.layer.cornerRadius = _profileImageView.frame.height/2
         _profileImageView.layer.masksToBounds = true
         
-        initMapView();
+        _manager = LocationManager.sharedInstance;
 
+        initMapView();
+        subscribeLocationUpdate()
     }
     
     func initMapView() {
         
-        let _customMapView : CustomMapView = UIView.fromNib()
-        _mapView.addSubview(_customMapView)
-        _mapView.bringSubview(toFront: _customMapView)
-        
-        
-        let manager = LocationManager.sharedInstance
+        let view: CustomMapView = UIView.fromNib()
+        _customMapView = view
+        _mapView.addSubview(_customMapView!)
+        _mapView.bringSubview(toFront: _customMapView!)
         
     }
+    
+    // MARK: Location Manager Signals
+    
+    func subscribeLocationUpdate() {
+        
+        _manager?.onCurrentLocationUpdate.subscribe(on: self, callback: { (location) in
+            self._customMapView?.onLocationUpdate(location: location)
+        })
+    }
+    
+
 }

@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
+  - Signals (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - Signals (~> 4.0)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Signals: 6d818e1b7c39f2bf61cfef30bf314329990d1853
 
-PODFILE CHECKSUM: e8243cd04b968a89ac98f680cbc88e92b9323a8f
+PODFILE CHECKSUM: 128808b33ab3087c6d459c888b057a39fa08183a
 
 COCOAPODS: 1.2.1

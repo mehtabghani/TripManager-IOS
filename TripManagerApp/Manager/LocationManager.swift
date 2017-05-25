@@ -8,11 +8,20 @@
 
 import Foundation
 import CoreLocation
+import Signals
 
 extension LocationManager : CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("didUpdateLocations");
+        
+        guard locations.first != nil else {
+            return;
+        }
+        
+        print("Latest location \(locations.first)");
+
+        onCurrentLocationUpdate.fire(locations.first!)
+            
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -26,6 +35,8 @@ class LocationManager: NSObject {
     private var _manager : CLLocationManager?
     private var _currentLocation: CLLocation?
     
+    let onCurrentLocationUpdate = Signal<CLLocation>()
+    
     
     static let sharedInstance = LocationManager()
     
@@ -38,7 +49,7 @@ class LocationManager: NSObject {
     func setup() {
         _manager = CLLocationManager();
         _manager!.delegate = self;
-        _manager?.desiredAccuracy = kCLLocationAccuracyBest
+        _manager!.desiredAccuracy = kCLLocationAccuracyBest
         startMonitoring()
     }
     

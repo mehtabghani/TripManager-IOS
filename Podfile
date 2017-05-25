@@ -8,6 +8,7 @@ target 'TripManagerApp' do
   # Pods for TripManagerApp
 
  pod 'Alamofire', '~> 4.4'
+ pod 'Signals', '~> 4.0'
 
 
 end
