@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="TripManagerApp" customModuleProvider="target">
             <connections>
+                <outlet property="_btnEndTrip" destination="P2o-Ri-V5I" id="dMZ-7M-C63"/>
+                <outlet property="_btnStartTrip" destination="p1T-4o-oI0" id="esm-jl-pbR"/>
                 <outlet property="_mapView" destination="PCm-qZ-1xx" id="8gn-SE-w7x"/>
                 <outlet property="_profileImageView" destination="szX-3L-OFj" id="AeW-bx-oP9"/>
                 <outlet property="view" destination="hbH-4O-MW7" id="ps4-fd-PmL"/>
@@ -42,16 +44,44 @@
                         <constraint firstItem="szX-3L-OFj" firstAttribute="top" secondItem="Gjs-Cd-gcw" secondAttribute="top" constant="-14" id="ZUE-bd-nSH"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-Ri-V5I" userLabel="END TRIP">
+                    <rect key="frame" x="10" y="436" width="300" height="34"/>
+                    <color key="backgroundColor" red="0.99453657865524292" green="0.0047994540072977543" blue="0.34457290172576904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="END TRIP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onEndTrip:" destination="-1" eventType="touchUpInside" id="QGj-qM-DiK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-4o-oI0">
+                    <rect key="frame" x="10" y="436" width="300" height="34"/>
+                    <color key="backgroundColor" red="0.19473418593406677" green="0.50763607025146484" blue="0.92400872707366943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="START TRIP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onStartTrip:" destination="-1" eventType="touchUpInside" id="qK6-Ic-wsQ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="PCm-qZ-1xx" firstAttribute="top" secondItem="Gjs-Cd-gcw" secondAttribute="bottom" constant="-1" id="3id-Rw-eui"/>
+                <constraint firstAttribute="bottom" secondItem="p1T-4o-oI0" secondAttribute="bottom" constant="10" id="4Aj-r8-2jc"/>
                 <constraint firstItem="Gjs-Cd-gcw" firstAttribute="top" secondItem="hbH-4O-MW7" secondAttribute="top" constant="40" id="6Hl-kO-tNK"/>
                 <constraint firstAttribute="trailing" secondItem="Gjs-Cd-gcw" secondAttribute="trailing" id="96D-6J-c7m"/>
+                <constraint firstItem="P2o-Ri-V5I" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" constant="10" id="J8s-1U-HCU"/>
+                <constraint firstAttribute="bottom" secondItem="P2o-Ri-V5I" secondAttribute="bottom" constant="10" id="Qxc-13-9im"/>
                 <constraint firstItem="PCm-qZ-1xx" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" id="ahK-CU-qAR"/>
+                <constraint firstAttribute="trailing" secondItem="p1T-4o-oI0" secondAttribute="trailing" constant="10" id="gQf-Dv-Tpy"/>
                 <constraint firstAttribute="bottom" secondItem="PCm-qZ-1xx" secondAttribute="bottom" id="hrU-Rm-Yxj"/>
+                <constraint firstItem="p1T-4o-oI0" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" constant="10" id="k5M-Kc-o7r"/>
                 <constraint firstAttribute="trailing" secondItem="PCm-qZ-1xx" secondAttribute="trailing" id="p19-NS-CBU"/>
                 <constraint firstItem="Gjs-Cd-gcw" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" id="rhf-nS-eRb"/>
+                <constraint firstAttribute="trailing" secondItem="P2o-Ri-V5I" secondAttribute="trailing" constant="10" id="vFa-0b-Jet"/>
             </constraints>
             <point key="canvasLocation" x="-814" y="-177"/>
         </view>

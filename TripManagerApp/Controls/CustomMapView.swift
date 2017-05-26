@@ -9,6 +9,16 @@
 import UIKit
 import MapKit
 
+extension CustomMapView : MKMapViewDelegate {
+    
+
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        polylineRenderer.strokeColor = UIColor.blue
+        polylineRenderer.lineWidth = 5
+        return polylineRenderer
+    }
+}
 
 class CustomMapView: UIView {
     
@@ -64,6 +74,7 @@ class CustomMapView: UIView {
 
         
         _mapView.showsUserLocation = true;
+        _mapView.delegate = self
         
     }
     
@@ -84,17 +95,16 @@ class CustomMapView: UIView {
     }
 // MARK: - Marker
     
-    func addMarker(location: CLLocation?, title:String) -> MKPointAnnotation? {
+    func addMarker(location: CLLocation?, title:String) {
         
         guard location != nil else {
-            return nil
+            return
         }
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = getCoordinates(location: location!);
         annotation.title = title
         _mapView.addAnnotation(annotation)
-        return annotation
 
     }
     
@@ -105,8 +115,40 @@ class CustomMapView: UIView {
         }
         
         _mapView.removeAnnotation(annotation!)
-  
 }
+    
+  // MARK: Draw Route
+    
+    func drawRoute(startLocation: CLLocation, endLocation: CLLocation) {
+    
+        let startCord = getCoordinates(location: startLocation)
+        let endCord = getCoordinates(location: endLocation)
+        let coordinates = [startCord, endCord]
+        
+        let poly = MKPolyline(coordinates: coordinates, count: 2)
+        _mapView.setVisibleMapRect(poly.boundingMapRect, animated: false)
+        _mapView.add(poly)
+        
+        //let geodesic = MKGeodesicPolyline(coordinates: coordinates, count: 2)
+       // _mapView.add(geodesic)
+    }
+    
+    
+    func drawRoute(locations:[CLLocation]) {
+        var coordinates = [CLLocationCoordinate2D]()
+
+        var i = 0
+        for location in locations {
+            coordinates.insert(getCoordinates(location: location), at: i)
+            i += 1
+
+        }
+        
+        let poly = MKPolyline(coordinates: coordinates, count: coordinates.count)
+        _mapView.setVisibleMapRect(poly.boundingMapRect, animated: false)
+        _mapView.add(poly)
+    }
+    
     
  // MARK: - Location Update Evenet
     
@@ -118,10 +160,14 @@ class CustomMapView: UIView {
                 _currentLocation = loc
                 navigateToRegion(_currentLocation)
             }
-            
         }
-
     }
-    
-    
+  
+   
 }
+
+
+
+    
+
+

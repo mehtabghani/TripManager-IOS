@@ -21,6 +21,7 @@ extension LocationManager : CLLocationManagerDelegate {
         print("Latest location \(locations.first)");
 
         onCurrentLocationUpdate.fire(locations.first!)
+        setCurrentLocation(location: locations.first!)
             
     }
     
@@ -74,5 +75,14 @@ class LocationManager: NSObject {
         
         return _currentLocation
     }
+    
+    public func setCurrentLocation(location: CLLocation?)  {
+        
+        guard location != nil else {
+            return
+        }
+        _currentLocation = location
+    }
+    
     
 }
