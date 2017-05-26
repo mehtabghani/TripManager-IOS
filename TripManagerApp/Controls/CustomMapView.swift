@@ -72,23 +72,17 @@ class CustomMapView: UIView {
         let region = MKCoordinateRegion(center: location, span: span)
         _mapView.setRegion(region, animated: true)
 
-        
         _mapView.showsUserLocation = true;
         _mapView.delegate = self
         
     }
     
-    func getCoordinates(location:CLLocation) -> CLLocationCoordinate2D {
-        
-        return CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
 
-    }
     
     func navigateToRegion(_ location:CLLocation?) {
         if let loc = location  {
-            let coordinates = getCoordinates(location: loc)
             let span = MKCoordinateSpanMake(0.05, 0.05)
-            let region = MKCoordinateRegion(center: coordinates, span: span)
+            let region = MKCoordinateRegion(center: loc.coordinate, span: span)
             _mapView.setRegion(region, animated: false)
         }
         
@@ -102,7 +96,7 @@ class CustomMapView: UIView {
         }
         
         let annotation = MKPointAnnotation()
-        annotation.coordinate = getCoordinates(location: location!);
+        annotation.coordinate = location!.coordinate
         annotation.title = title
         _mapView.addAnnotation(annotation)
 
@@ -121,16 +115,13 @@ class CustomMapView: UIView {
     
     func drawRoute(startLocation: CLLocation, endLocation: CLLocation) {
     
-        let startCord = getCoordinates(location: startLocation)
-        let endCord = getCoordinates(location: endLocation)
+        let startCord = startLocation.coordinate
+        let endCord = endLocation.coordinate
         let coordinates = [startCord, endCord]
         
-        let poly = MKPolyline(coordinates: coordinates, count: 2)
+        let poly = MKPolyline(coordinates: coordinates, count: coordinates.count)
         _mapView.setVisibleMapRect(poly.boundingMapRect, animated: false)
         _mapView.add(poly)
-        
-        //let geodesic = MKGeodesicPolyline(coordinates: coordinates, count: 2)
-       // _mapView.add(geodesic)
     }
     
     
@@ -139,14 +130,13 @@ class CustomMapView: UIView {
 
         var i = 0
         for location in locations {
-            coordinates.insert(getCoordinates(location: location), at: i)
+            coordinates.insert(location.coordinate, at: i)
             i += 1
 
         }
         
-        let poly = MKPolyline(coordinates: coordinates, count: coordinates.count)
-        _mapView.setVisibleMapRect(poly.boundingMapRect, animated: false)
-        _mapView.add(poly)
+        let geodesic = MKGeodesicPolyline(coordinates: coordinates, count: coordinates.count)
+         _mapView.add(geodesic)
     }
     
     
