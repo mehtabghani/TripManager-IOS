@@ -12,9 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var vcLogin: LoginViewController?
     var navController: UINavigationController?
-    
     
     static func getInstance() -> AppDelegate {
        return UIApplication.shared.delegate as! AppDelegate
@@ -34,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //showLoginController()
 
         window?.makeKeyAndVisible()
+
         return true
     }
 
