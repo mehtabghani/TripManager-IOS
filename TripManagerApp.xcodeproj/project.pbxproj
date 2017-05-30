@@ -23,6 +23,11 @@
 		1BBB09DA1ED30C5500F73B77 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D91ED30C5500F73B77 /* BaseService.swift */; };
 		1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */; };
 		1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBB09DE1ED3287000F73B77 /* Alamofire.framework */; };
+		1BC18D591EDD358200D1578D /* BaseMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC18D581EDD358200D1578D /* BaseMapView.swift */; };
+		1BC18D5B1EDD498A00D1578D /* KWDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC18D5A1EDD498A00D1578D /* KWDrawerController.framework */; };
+		1BC18D5D1EDD4B9100D1578D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */; };
+		1BC18D5F1EDD4BCC00D1578D /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC18D5E1EDD4BCC00D1578D /* MenuView.xib */; };
+		1BC18D611EDD546000D1578D /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC18D601EDD546000D1578D /* SlideMenuControllerSwift.framework */; };
 		1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */; };
 		1BC1AECB1ED44B0600869AA1 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AECA1ED44B0600869AA1 /* AppConfig.swift */; };
 		1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */; };
@@ -51,6 +56,11 @@
 		1BBB09D91ED30C5500F73B77 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1BBB09DE1ED3287000F73B77 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1BC18D581EDD358200D1578D /* BaseMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMapView.swift; sourceTree = "<group>"; };
+		1BC18D5A1EDD498A00D1578D /* KWDrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KWDrawerController.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/KWDrawerController/KWDrawerController.framework"; sourceTree = "<group>"; };
+		1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1BC18D5E1EDD4BCC00D1578D /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		1BC18D601EDD546000D1578D /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"; sourceTree = "<group>"; };
 		1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		1BC1AECA1ED44B0600869AA1 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC18D611EDD546000D1578D /* SlideMenuControllerSwift.framework in Frameworks */,
+				1BC18D5B1EDD498A00D1578D /* KWDrawerController.framework in Frameworks */,
 				1BB4CE161ED6A6B0003505DB /* Signals.framework in Frameworks */,
 				1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */,
 				AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */,
@@ -118,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */,
+				1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */,
 				1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */,
 				1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */,
 				1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */,
@@ -132,6 +145,7 @@
 				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
 				1BBB09D51ED2FAA400F73B77 /* LoginView.xib */,
 				1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */,
+				1BC18D5E1EDD4BCC00D1578D /* MenuView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 		1B1DB1C31ECED07B00600AA6 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				1BC18D581EDD358200D1578D /* BaseMapView.swift */,
 				1B6B452D1ED55E9C00612EC7 /* CustomMapView.swift */,
 			);
 			path = Controls;
@@ -206,6 +221,8 @@
 		CC0611BF5F32015397553A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BC18D601EDD546000D1578D /* SlideMenuControllerSwift.framework */,
+				1BC18D5A1EDD498A00D1578D /* KWDrawerController.framework */,
 				1BB4CE151ED6A6B0003505DB /* Signals.framework */,
 				1BBB09DE1ED3287000F73B77 /* Alamofire.framework */,
 				8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */,
@@ -283,6 +300,7 @@
 			files = (
 				1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */,
 				1BBB09D61ED2FAA400F73B77 /* LoginView.xib in Resources */,
+				1BC18D5F1EDD4BCC00D1578D /* MenuView.xib in Resources */,
 				1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */,
 				1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */,
 				1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */,
@@ -346,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC1AECB1ED44B0600869AA1 /* AppConfig.swift in Sources */,
+				1BC18D5D1EDD4B9100D1578D /* MenuViewController.swift in Sources */,
 				1BBB09DA1ED30C5500F73B77 /* BaseService.swift in Sources */,
 				1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */,
 				1B1DB1A61ECEBDCB00600AA6 /* AppDelegate.swift in Sources */,
@@ -357,6 +376,7 @@
 				1B6B45381ED5BB0300612EC7 /* UIViewExtension.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
+				1BC18D591EDD358200D1578D /* BaseMapView.swift in Sources */,
 				1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

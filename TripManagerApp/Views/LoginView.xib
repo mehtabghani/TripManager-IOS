@@ -31,6 +31,7 @@
                 <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qwerty" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaU-kI-QOg" customClass="CustomTextField" customModule="TripManagerApp" customModuleProvider="target">
                     <rect key="frame" x="30" y="243" width="260" height="30"/>
                     <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocX-C1-qkz">
@@ -54,7 +55,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.6284831166267395" green="0.76208877563476562" blue="0.9230925440788269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.62745098039215685" green="0.66666666666666663" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ocX-C1-qkz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="4CW-St-1Sz"/>
                 <constraint firstItem="PtB-K7-mIw" firstAttribute="top" secondItem="ocX-C1-qkz" secondAttribute="bottom" constant="120" id="5GT-uf-9aj"/>

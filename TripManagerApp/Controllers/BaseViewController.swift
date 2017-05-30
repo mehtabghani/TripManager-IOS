@@ -14,6 +14,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 160, green: 194, blue: 235, alpha: 0.0)
 
         // Do any additional setup after loading the view.
     }
@@ -42,5 +43,17 @@ class BaseViewController: UIViewController {
     func loadService() {
     
     }
+    
+    func showMenuButton() {
+        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        menuButton.setBackgroundImage(UIImage(named: "menu_icon"), for: .normal)
+        menuButton.addTarget(self, action: #selector(onMenuPressed), for: .touchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
+    }
+    
+    func onMenuPressed() {
+        self.drawerController?.openSide(.left)
+    }
+    
 
 }

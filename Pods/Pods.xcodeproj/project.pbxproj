@@ -7,102 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A8AC88BD13EEF23583A1DC5266C0BD7 /* Pods-TripManagerApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5600C0B579F77502F38A42E6340DF914 /* Pods-TripManagerApp-dummy.m */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F41598231741BC93013468D2E7FB5E /* Timeline.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 887ABEBDCA3A137B6C9A6A501B96BE4D /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF4C8BC0CB0B906E909FEB979A17488 /* TaskDelegate.swift */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C9460EE8B1BFA46753DF68AECB19B4 /* Request.swift */; };
-		55EDC686D5EEDDE35FA0D0D7E73741A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		590A825C74C6E556D2C1E8271BA5715F /* Signals-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB274DD5916B8C642FB4B0B0DF9DCAE /* Signals-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931612B4412BB2BA5EF02A75B026672F /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63473B7C71614782CEA31BED0B9A0F2A /* ServerTrustPolicy.swift */; };
-		6DE0DBD6BEEA3D061CD95BA735A68847 /* Signals-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D793F65E88F6D389A9BBD2F616DEC1B /* Signals-dummy.m */; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5620EB926CCF857479AECEFB0049 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F727610AA8A5A10E0C406BB34340E /* Result.swift */; };
-		7EA9248AF75A8426DD81C152C9744C63 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D256B7878686FEE3F8ABF4DDABA1181 /* AssociatedObject.swift */; };
-		8255922C8653109EA71AB56FB43A22C7 /* UIControl+Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36424601AFDBC9BFEFD9F07363B84D /* UIControl+Signals.swift */; };
-		988413FD7F71107F5D5704B5A488FB0B /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4C6AB8D0B60055CB27B1FC881F4284 /* Signal.swift */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F48CEF2BF34D918D69FB1257C608FB /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214CBAF4EA63D5A131E2877ECBC020C /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42F57890DC4F3F67264B7EE279CE0FE /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A2F2E2F83F40352133B8428CFE90E /* SessionManager.swift */; };
-		B0467E526E5878C8A1AABC3B4889124D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E342ED11C5A42D4C1789C776A7539E5 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D57CE6B9E952FAE896C6B2C8968AA /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120701E6BDF304327EAF6E5840C53EA0 /* ParameterEncoding.swift */; };
-		C21FB33746F2DACC528BD41D57404DED /* Pods-TripManagerApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C109266BA8DF807A52B61AFEE272D0ED /* Pods-TripManagerApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F77DCCBC6F228CC906A591B2A07346C /* Response.swift */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704F9932CC997597628D8CE01723D5E /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4228176AC10B9C035B65FD9410A9D5E /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37269159F1FE807770922743AC06E8FB /* Alamofire.swift */; };
+		0A88D8B14814C2C976852DD3074EB647 /* UIControl+Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744C46DFDB45CCE16B200E1B59874CF /* UIControl+Signals.swift */; };
+		0F9B707F75E571E0DCD39A3E5003E65C /* DrawerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA2E69DD2878626A02D2C66FD249C7 /* DrawerAnimator.swift */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E9C92ECA5A2496B783442D25EF011 /* Timeline.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE724E7FFB2A62112C1C13536C95588 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CE4D022297D95B233759C19A7BDB8C /* DrawerZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D36DAB7DCA75806CE69F9014F8FDB /* DrawerZoomTransition.swift */; };
+		2847682F49CE5DC7FF06933D24CA540F /* DrawerQuadEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD7969CCCB48EEA631D428772B8ED40 /* DrawerQuadEaseAnimator.swift */; };
+		28DAD4E01BC20EC4FA2C64027816B720 /* DrawerSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B4B62084734655890185FED895F87 /* DrawerSide.swift */; };
+		2DF6354B49445D8D84CE172F4DCC1E46 /* KWDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B57C03FCA14C3530A3A5BDCCFD1F54 /* KWDrawerController-dummy.m */; };
+		352AABE5027FAFCE61163D14DB431875 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A18F9E0F97D27F72AB0AD8514EE8AD /* Signal.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3B75A0A977AEDB870FD03F665668 /* TaskDelegate.swift */; };
+		37FD52C0DF489434CE22FDE86B3414DC /* DrawerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D81E14A0AB6F0DAF7707F637A7A9B5 /* DrawerContent.swift */; };
+		412C2D7C3AE939B2423BA85E81A03861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		49EF63D0CA18BA1D4CCCB7F7A0C17B9F /* Signals-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44464C6CAA885B0B2FE73A0F724085BD /* Signals-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ACDC59C7BD19380DB4A55457E40EBC2 /* DrawerSwingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED093ECD21CAAD8E6667E8EBD155FB /* DrawerSwingTransition.swift */; };
+		4ADE46EEFA8A022935DD6CECFD6F7359 /* DrawerBackEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927833313DD2E46E06B605FA9F544D3 /* DrawerBackEaseAnimator.swift */; };
+		4DAB86004919372F62368E88C1F1A707 /* DrawerEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD79C5AE51DBC26B3890AB2E4E5B59 /* DrawerEmbedMainControllerSegue.swift */; };
+		534EB192AC0DEDA86AB5989B7F7C6B3A /* DrawerSineEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D0533A405306066A442E3077543CC /* DrawerSineEaseAnimator.swift */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615D6896D96B34AA353930775143DACF /* Request.swift */; };
+		5646130D6CE2648547D2206806F04B47 /* DrawerGestureSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26685C47498C7AB65125E0BE0FA6F82B /* DrawerGestureSensitivity.swift */; };
+		5B3B6E186FC69CA701FED184B44CEBC1 /* DrawerFoldTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79E089FC90824D00205525E789D1654 /* DrawerFoldTransition.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDF950576D059CBF77397C2EF466BD /* DispatchQueue+Alamofire.swift */; };
+		615A424188958C373956DFA2CE1DD171 /* DrawerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42CDDEFA2670DD361ADEF5DD51EBB1 /* DrawerTransition.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B7E658C2B18C0CB16DC61ABF6CC3 /* ServerTrustPolicy.swift */; };
+		6879F0F238F5ECEED5C76EF4E3E2BF69 /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039DFF7BABA2AFEC75F575CE84CBA12 /* DrawerOption.swift */; };
+		6CF562CBF09C03C48A2AB3532E32E3D7 /* DrawerQuintEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF269237CF34C5D1B55DC2309BDAAE41 /* DrawerQuintEaseAnimator.swift */; };
+		6CF8449F8B7A7BC2D211DD977FF7D888 /* DrawerFloatTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6440E1E2769D8010330FBFB907C05 /* DrawerFloatTransition.swift */; };
+		71E91B029D9997E2FFFF9AFA8817CFFB /* DrawerSlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058D24E0BC03E5667D20DD193F4B72D3 /* DrawerSlideTransition.swift */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C8199CD0252A158A43C901648EBBA /* SessionDelegate.swift */; };
+		7CDE2EF7384C5F7B12CE58399EF2633E /* KWDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B18859ACF59E05CCC8B19DC39C5E4DBF /* KWDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1B2DEE9EB866DD31366170FB9BDCB /* Result.swift */; };
+		7FACC83DE144816607FBE2CB66D3B497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		8BCAD304CDB268982D68EB012A776E8F /* DrawerLinearAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4939FBA03AFC252EDE8C258EC2A1C1A /* DrawerLinearAnimator.swift */; };
+		95CA39F9EEBA284B592DFC6C8585A0AF /* UIViewController+DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81047401971F5C028D300F7E2A5D10 /* UIViewController+DrawerController.swift */; };
+		99495EB4268360A4EBE07A73E1108F4C /* DrawerTickAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C33E03EDC94FF473FD8E74D1A25F1F /* DrawerTickAnimator.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0699F2E8CF298CA6CE4C3E718911FAC /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03C709AD105659A660746E875AEACDB /* NetworkReachabilityManager.swift */; };
+		A89DCDFCB3D41B977DF3303E19CD4BFE /* DrawerScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C87A81F8E227FD1E02018602F34D2F3 /* DrawerScaleTransition.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8517D8EC6F098F472F4147455D266 /* Alamofire-dummy.m */; };
+		AD691C85D421268D04B023158E0CC6B4 /* Pods-TripManagerApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5600C0B579F77502F38A42E6340DF914 /* Pods-TripManagerApp-dummy.m */; };
+		AE03F0E18C49267DDD8A96B092339738 /* DrawerExpoEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C592D67C8B91042BCC273B102E58784 /* DrawerExpoEaseAnimator.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944F561015828DFD87580BA5C27F342 /* SessionManager.swift */; };
+		B0828E11A66D985DB83CFE017A95E2FA /* DrawerBounceEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8958E771B488B2F1F919713A1DAFB51 /* DrawerBounceEaseAnimator.swift */; };
+		B3544E18926ED5F1C47C5899D0785DE8 /* DrawerQuartEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9BB2A1BFF62134D8EEDBFAD428CDE /* DrawerQuartEaseAnimator.swift */; };
+		B3C19494F7D32799772650F64694FB91 /* DrawerElasticEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418172AE3974D11FD9251A1FC8072394 /* DrawerElasticEaseAnimator.swift */; };
+		B47C03964AAD5BC4B68DD8055B2394BD /* Pods-TripManagerApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C109266BA8DF807A52B61AFEE272D0ED /* Pods-TripManagerApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5904DD6AA045A1157A9DAD64D4838970 /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBF74C3A3A7BE5D4E0297657DF2EE9 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8016F6A3ADFC294E30E4EB22AA465 /* ParameterEncoding.swift */; };
+		C20579190BD1816640FDEAE75898A8F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565CD8DDCAA24F918E5B89597BC862A /* Response.swift */; };
+		CDE8AF4365F3F23E781ECE7371B65130 /* DrawerCircEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525656D3608583BC94AB5106D89C76D /* DrawerCircEaseAnimator.swift */; };
+		D7DDE75A115F7F903083D4612DFB5080 /* DrawerParallaxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72CC278380E9E200970CD42E13F0BE /* DrawerParallaxTransition.swift */; };
+		D93E86270770CD57D744CC8D63A2E02C /* DrawerEmbedLeftControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB45774921DE2F435F51B786F011043 /* DrawerEmbedLeftControllerSegue.swift */; };
+		DB801CE33AEDE18C9808530FE3F779A3 /* DrawerEmbedRightControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89696E3D183BC5CF640C37A92674B50E /* DrawerEmbedRightControllerSegue.swift */; };
+		DF72164CF9A05122F616F61A554A69A7 /* Signals-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1750B8BD040373F3FD72355B7C2DE0 /* Signals-dummy.m */; };
+		E223595A9EB195931A10DC2A05E2BCCB /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29AC2F8A191F6187C1DB22A7FFEBBAD /* DrawerController.swift */; };
+		E2322CA1921936EEEE8EEB4F4DF23B26 /* DrawerSpringAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52231AC82008A0150FCCAEA867EACA /* DrawerSpringAnimator.swift */; };
+		E6A48AD5354E13F7EB98EEA3CB13B2C4 /* DrawerCubicEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363CCCCFF817072ACA4AC186C94E970E /* DrawerCubicEaseAnimator.swift */; };
+		EBFC197CE9E08C4288CA477AB68EDF47 /* DrawerCurveEaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88EEDB89E07D38196694F1E9706AEB5 /* DrawerCurveEaseAnimator.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0C7F6477EF3F004507CA717521E72 /* Notifications.swift */; };
+		F23CD2895CD5F38D8FC60096DD540259 /* TranslucentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1721A328259CB02A1F81145E5B297B /* TranslucentView.swift */; };
+		F31C4F752B071EF3395994E73C248EB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38133286B4649F1EE11DE4DCE2D2B5 /* ResponseSerialization.swift */; };
+		F6E7AD231DA2AF43B0CE00F76604CA9A /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DACBED6B0C78D4E40AB7DD2AA88430 /* AssociatedObject.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC186C3218FB7A704B3352B751089656 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30DDDC3FC013BEA8D83F3A0B193E6EF2 /* PBXContainerItemProxy */ = {
+		30A45F311B74DE37EC77E9200439BD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F974FE6F0EFF5F19A3A7D5357B8EC53;
+			remoteInfo = KWDrawerController;
+		};
+		9D0D05C064387C2B38E80916D2CF1B9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		91C6CF7C501AE209173EA35AFC118964 /* PBXContainerItemProxy */ = {
+		C9ECFDAB1370E574299EEB566A8B8276 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 762E036E3A9976F210AA3CBA1D05D044;
+			remoteGlobalIDString = D96FDBEB9DA718DBED53FDE9927B7D52;
 			remoteInfo = Signals;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DACBED6B0C78D4E40AB7DD2AA88430 /* AssociatedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedObject.swift; path = Signals/ios/AssociatedObject.swift; sourceTree = "<group>"; };
 		01A70CD8DABAC962902DC6C69C0F6E1F /* Pods-TripManagerApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TripManagerApp-resources.sh"; sourceTree = "<group>"; };
-		120701E6BDF304327EAF6E5840C53EA0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		143004C7469593E2416651B07CE9C100 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3D5620EB926CCF857479AECEFB0049 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		1F36424601AFDBC9BFEFD9F07363B84D /* UIControl+Signals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Signals.swift"; path = "Signals/ios/UIControl+Signals.swift"; sourceTree = "<group>"; };
-		1FB26DB6993C76D4F9BE0DFC36F7CD0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		287D57CE6B9E952FAE896C6B2C8968AA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		2D2A2F2E2F83F40352133B8428CFE90E /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		34C9460EE8B1BFA46753DF68AECB19B4 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		37269159F1FE807770922743AC06E8FB /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		4E342ED11C5A42D4C1789C776A7539E5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		5214CBAF4EA63D5A131E2877ECBC020C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		058D24E0BC03E5667D20DD193F4B72D3 /* DrawerSlideTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSlideTransition.swift; path = DrawerController/Transition/DrawerSlideTransition.swift; sourceTree = "<group>"; };
+		0927833313DD2E46E06B605FA9F544D3 /* DrawerBackEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerBackEaseAnimator.swift; path = DrawerController/Animator/DrawerBackEaseAnimator.swift; sourceTree = "<group>"; };
+		0A6D3B75A0A977AEDB870FD03F665668 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		0EAD79C5AE51DBC26B3890AB2E4E5B59 /* DrawerEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerEmbedMainControllerSegue.swift; path = DrawerController/Segue/DrawerEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		0ED0C7F6477EF3F004507CA717521E72 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		0EFA61BEAF82C237E09F08B46761626D /* Signals.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Signals.xcconfig; sourceTree = "<group>"; };
+		0FE724E7FFB2A62112C1C13536C95588 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		11B57C03FCA14C3530A3A5BDCCFD1F54 /* KWDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KWDrawerController-dummy.m"; sourceTree = "<group>"; };
+		13F8016F6A3ADFC294E30E4EB22AA465 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		190830BCB4D9832F7B00254492280F80 /* Signals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Signals.framework; path = Signals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDDF950576D059CBF77397C2EF466BD /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		26685C47498C7AB65125E0BE0FA6F82B /* DrawerGestureSensitivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerGestureSensitivity.swift; path = DrawerController/Types/DrawerGestureSensitivity.swift; sourceTree = "<group>"; };
+		2A7D0533A405306066A442E3077543CC /* DrawerSineEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSineEaseAnimator.swift; path = DrawerController/Animator/DrawerSineEaseAnimator.swift; sourceTree = "<group>"; };
+		2D42CDDEFA2670DD361ADEF5DD51EBB1 /* DrawerTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerTransition.swift; path = DrawerController/Transition/DrawerTransition.swift; sourceTree = "<group>"; };
+		2DF8F83D14B836F051507708AFCD593C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		35FBF74C3A3A7BE5D4E0297657DF2EE9 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		363CCCCFF817072ACA4AC186C94E970E /* DrawerCubicEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerCubicEaseAnimator.swift; path = DrawerController/Animator/DrawerCubicEaseAnimator.swift; sourceTree = "<group>"; };
+		3EB45774921DE2F435F51B786F011043 /* DrawerEmbedLeftControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerEmbedLeftControllerSegue.swift; path = DrawerController/Segue/DrawerEmbedLeftControllerSegue.swift; sourceTree = "<group>"; };
+		3F72CC278380E9E200970CD42E13F0BE /* DrawerParallaxTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerParallaxTransition.swift; path = DrawerController/Transition/DrawerParallaxTransition.swift; sourceTree = "<group>"; };
+		418172AE3974D11FD9251A1FC8072394 /* DrawerElasticEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerElasticEaseAnimator.swift; path = DrawerController/Animator/DrawerElasticEaseAnimator.swift; sourceTree = "<group>"; };
+		433B879AB0BC79DE744EE0157E2DC00D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		44464C6CAA885B0B2FE73A0F724085BD /* Signals-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Signals-umbrella.h"; sourceTree = "<group>"; };
+		4565CD8DDCAA24F918E5B89597BC862A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		4B419C3330DBB073C03D6FE9647EF775 /* KWDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KWDrawerController.framework; path = KWDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFAD3F8AA8549FA8005310A82CAE1F2 /* Pods_TripManagerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TripManagerApp.framework; path = "Pods-TripManagerApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C592D67C8B91042BCC273B102E58784 /* DrawerExpoEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerExpoEaseAnimator.swift; path = DrawerController/Animator/DrawerExpoEaseAnimator.swift; sourceTree = "<group>"; };
+		4E1721A328259CB02A1F81145E5B297B /* TranslucentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslucentView.swift; path = DrawerController/View/TranslucentView.swift; sourceTree = "<group>"; };
+		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5600C0B579F77502F38A42E6340DF914 /* Pods-TripManagerApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TripManagerApp-dummy.m"; sourceTree = "<group>"; };
-		61599563577C5403157C3D8F03B5C393 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		6277496E7AD8B0527A54DECCEA3B7349 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63473B7C71614782CEA31BED0B9A0F2A /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6F77DCCBC6F228CC906A591B2A07346C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		72F41598231741BC93013468D2E7FB5E /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		887ABEBDCA3A137B6C9A6A501B96BE4D /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		8D256B7878686FEE3F8ABF4DDABA1181 /* AssociatedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedObject.swift; path = Signals/ios/AssociatedObject.swift; sourceTree = "<group>"; };
-		8D793F65E88F6D389A9BBD2F616DEC1B /* Signals-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Signals-dummy.m"; sourceTree = "<group>"; };
-		8F752BA1851194C9C0094E339598E404 /* Signals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Signals.framework; path = Signals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		931612B4412BB2BA5EF02A75B026672F /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		5904DD6AA045A1157A9DAD64D4838970 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		59061FE3C663C8FF08D92D867E41C463 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591C8199CD0252A158A43C901648EBBA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		5AA8B7E658C2B18C0CB16DC61ABF6CC3 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		5FA6440E1E2769D8010330FBFB907C05 /* DrawerFloatTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerFloatTransition.swift; path = DrawerController/Transition/DrawerFloatTransition.swift; sourceTree = "<group>"; };
+		615D6896D96B34AA353930775143DACF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		7525656D3608583BC94AB5106D89C76D /* DrawerCircEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerCircEaseAnimator.swift; path = DrawerController/Animator/DrawerCircEaseAnimator.swift; sourceTree = "<group>"; };
+		89696E3D183BC5CF640C37A92674B50E /* DrawerEmbedRightControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerEmbedRightControllerSegue.swift; path = DrawerController/Segue/DrawerEmbedRightControllerSegue.swift; sourceTree = "<group>"; };
+		8A6E9C92ECA5A2496B783442D25EF011 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		8CD9BB2A1BFF62134D8EEDBFAD428CDE /* DrawerQuartEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerQuartEaseAnimator.swift; path = DrawerController/Animator/DrawerQuartEaseAnimator.swift; sourceTree = "<group>"; };
+		92A18F9E0F97D27F72AB0AD8514EE8AD /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = Signals/Signal.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95E5D27FBBFE2B8C7FABDAC645CBA854 /* Signals.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Signals.modulemap; sourceTree = "<group>"; };
+		966532616496FED33E1C0397136C8756 /* KWDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KWDrawerController-prefix.pch"; sourceTree = "<group>"; };
 		9801BA76DFDA3730F616EE2AA2C8FFC4 /* Pods-TripManagerApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TripManagerApp-frameworks.sh"; sourceTree = "<group>"; };
 		98E9DBA4FD97041EA07FC1050FCBE830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F69F8C4845DAD9185C802FDD48A0530 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		A2257F3E19BB0F782181009093C06D90 /* Signals.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Signals.xcconfig; sourceTree = "<group>"; };
-		A704F9932CC997597628D8CE01723D5E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		AB4C6AB8D0B60055CB27B1FC881F4284 /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = Signals/Signal.swift; sourceTree = "<group>"; };
-		B3F48CEF2BF34D918D69FB1257C608FB /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		BC1561D1AC090F419FCC47B609B6ABF0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		9A1750B8BD040373F3FD72355B7C2DE0 /* Signals-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Signals-dummy.m"; sourceTree = "<group>"; };
+		9A52231AC82008A0150FCCAEA867EACA /* DrawerSpringAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSpringAnimator.swift; path = DrawerController/Animator/DrawerSpringAnimator.swift; sourceTree = "<group>"; };
+		9C87A81F8E227FD1E02018602F34D2F3 /* DrawerScaleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerScaleTransition.swift; path = DrawerController/Transition/DrawerScaleTransition.swift; sourceTree = "<group>"; };
+		9CA1B2DEE9EB866DD31366170FB9BDCB /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		9CD8517D8EC6F098F472F4147455D266 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		9E4B4B62084734655890185FED895F87 /* DrawerSide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSide.swift; path = DrawerController/Types/DrawerSide.swift; sourceTree = "<group>"; };
+		9F38133286B4649F1EE11DE4DCE2D2B5 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9F81047401971F5C028D300F7E2A5D10 /* UIViewController+DrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+DrawerController.swift"; path = "DrawerController/UIViewController+DrawerController.swift"; sourceTree = "<group>"; };
+		A03C709AD105659A660746E875AEACDB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		A16C3A1066C9BB981B272272722C2BCC /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		A2C33E03EDC94FF473FD8E74D1A25F1F /* DrawerTickAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerTickAnimator.swift; path = DrawerController/Animator/DrawerTickAnimator.swift; sourceTree = "<group>"; };
+		A3ED093ECD21CAAD8E6667E8EBD155FB /* DrawerSwingTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSwingTransition.swift; path = DrawerController/Transition/DrawerSwingTransition.swift; sourceTree = "<group>"; };
+		B0699F2E8CF298CA6CE4C3E718911FAC /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B18859ACF59E05CCC8B19DC39C5E4DBF /* KWDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KWDrawerController-umbrella.h"; sourceTree = "<group>"; };
+		B4939FBA03AFC252EDE8C258EC2A1C1A /* DrawerLinearAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerLinearAnimator.swift; path = DrawerController/Animator/DrawerLinearAnimator.swift; sourceTree = "<group>"; };
+		B92D36DAB7DCA75806CE69F9014F8FDB /* DrawerZoomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerZoomTransition.swift; path = DrawerController/Transition/DrawerZoomTransition.swift; sourceTree = "<group>"; };
+		B944F561015828DFD87580BA5C27F342 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		C109266BA8DF807A52B61AFEE272D0ED /* Pods-TripManagerApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TripManagerApp-umbrella.h"; sourceTree = "<group>"; };
-		C20D08B622A423F27CFC7067B6F49DCD /* Signals.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Signals.modulemap; sourceTree = "<group>"; };
 		C333876FE6051B3E5E1538713B18817C /* Pods-TripManagerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripManagerApp.release.xcconfig"; sourceTree = "<group>"; };
-		C4228176AC10B9C035B65FD9410A9D5E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		C42F57890DC4F3F67264B7EE279CE0FE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		C6A7AB6765E27AF6547D8D492A2DF2B6 /* KWDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KWDrawerController.modulemap; sourceTree = "<group>"; };
 		C7902BA31EDD17D861E33FC8405A5A31 /* Pods-TripManagerApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TripManagerApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CDF4C8BC0CB0B906E909FEB979A17488 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		C8958E771B488B2F1F919713A1DAFB51 /* DrawerBounceEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerBounceEaseAnimator.swift; path = DrawerController/Animator/DrawerBounceEaseAnimator.swift; sourceTree = "<group>"; };
+		CAD7969CCCB48EEA631D428772B8ED40 /* DrawerQuadEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerQuadEaseAnimator.swift; path = DrawerController/Animator/DrawerQuadEaseAnimator.swift; sourceTree = "<group>"; };
+		CF269237CF34C5D1B55DC2309BDAAE41 /* DrawerQuintEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerQuintEaseAnimator.swift; path = DrawerController/Animator/DrawerQuintEaseAnimator.swift; sourceTree = "<group>"; };
+		CFAC86C28F3B766735CED45E4A6337D6 /* Signals-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Signals-prefix.pch"; sourceTree = "<group>"; };
+		D039DFF7BABA2AFEC75F575CE84CBA12 /* DrawerOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = DrawerController/Models/DrawerOption.swift; sourceTree = "<group>"; };
 		D07F4DAC3A443707FD241D47DAD8DD79 /* Pods-TripManagerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripManagerApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D6223912DF7B5612ED3DDD1490837F00 /* Signals-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Signals-prefix.pch"; sourceTree = "<group>"; };
-		E73A60AE2A7AE232FE18511637C9CF23 /* Pods_TripManagerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TripManagerApp.framework; path = "Pods-TripManagerApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAB274DD5916B8C642FB4B0B0DF9DCAE /* Signals-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Signals-umbrella.h"; sourceTree = "<group>"; };
-		EC4F727610AA8A5A10E0C406BB34340E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D29AC2F8A191F6187C1DB22A7FFEBBAD /* DrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerController.swift; path = DrawerController/DrawerController.swift; sourceTree = "<group>"; };
+		D88EEDB89E07D38196694F1E9706AEB5 /* DrawerCurveEaseAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerCurveEaseAnimator.swift; path = DrawerController/Animator/DrawerCurveEaseAnimator.swift; sourceTree = "<group>"; };
+		DC186C3218FB7A704B3352B751089656 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		DD68BF610B1616FDD53D8DD2DE4BEF09 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D81E14A0AB6F0DAF7707F637A7A9B5 /* DrawerContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerContent.swift; path = DrawerController/Models/DrawerContent.swift; sourceTree = "<group>"; };
+		EA1923012AC04097702D4A4B24A6DF61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CA2E69DD2878626A02D2C66FD249C7 /* DrawerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerAnimator.swift; path = DrawerController/Animator/DrawerAnimator.swift; sourceTree = "<group>"; };
+		F41FFBEC497DFB3BDE055B66C8ECFA9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F744C46DFDB45CCE16B200E1B59874CF /* UIControl+Signals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Signals.swift"; path = "Signals/ios/UIControl+Signals.swift"; sourceTree = "<group>"; };
+		F79E089FC90824D00205525E789D1654 /* DrawerFoldTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerFoldTransition.swift; path = DrawerController/Transition/DrawerFoldTransition.swift; sourceTree = "<group>"; };
+		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		FD09382EF89612A5779FF0FEFE309B73 /* Pods-TripManagerApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TripManagerApp.modulemap"; sourceTree = "<group>"; };
 		FEE46DE5AA27D3855C352A4729860E0B /* Pods-TripManagerApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripManagerApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF0ADA11D27CEE6ACFFB44EE35A686BE /* KWDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KWDrawerController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,59 +199,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CC98985C70978ADE84D7421D5211F2C /* Frameworks */ = {
+		CD6EE65D179C94FEE12557004BBAD1FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0467E526E5878C8A1AABC3B4889124D /* Foundation.framework in Frameworks */,
+				7FACC83DE144816607FBE2CB66D3B497 /* Foundation.framework in Frameworks */,
+				F31C4F752B071EF3395994E73C248EB0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3064B3C8844A09482B84360F92B5E17 /* Frameworks */ = {
+		D1658258A1F446D9B3CE1C5D3C3CEF00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EDC686D5EEDDE35FA0D0D7E73741A8 /* Foundation.framework in Frameworks */,
+				412C2D7C3AE939B2423BA85E81A03861 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A058CF3809C80BECF03CBB345A2ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20579190BD1816640FDEAE75898A8F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E01F7627C722DB0B66AD70C60C177C2 /* Signals */ = {
+		05561B3B691326F4D5C7A1F8155C9580 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				8D256B7878686FEE3F8ABF4DDABA1181 /* AssociatedObject.swift */,
-				AB4C6AB8D0B60055CB27B1FC881F4284 /* Signal.swift */,
-				1F36424601AFDBC9BFEFD9F07363B84D /* UIControl+Signals.swift */,
-				60F47736B7D5E7E11B9DF69631FAC0F2 /* Support Files */,
+				B0699F2E8CF298CA6CE4C3E718911FAC /* AFError.swift */,
+				DC186C3218FB7A704B3352B751089656 /* Alamofire.swift */,
+				1FDDF950576D059CBF77397C2EF466BD /* DispatchQueue+Alamofire.swift */,
+				5904DD6AA045A1157A9DAD64D4838970 /* MultipartFormData.swift */,
+				A03C709AD105659A660746E875AEACDB /* NetworkReachabilityManager.swift */,
+				0ED0C7F6477EF3F004507CA717521E72 /* Notifications.swift */,
+				13F8016F6A3ADFC294E30E4EB22AA465 /* ParameterEncoding.swift */,
+				615D6896D96B34AA353930775143DACF /* Request.swift */,
+				4565CD8DDCAA24F918E5B89597BC862A /* Response.swift */,
+				9F38133286B4649F1EE11DE4DCE2D2B5 /* ResponseSerialization.swift */,
+				9CA1B2DEE9EB866DD31366170FB9BDCB /* Result.swift */,
+				5AA8B7E658C2B18C0CB16DC61ABF6CC3 /* ServerTrustPolicy.swift */,
+				591C8199CD0252A158A43C901648EBBA /* SessionDelegate.swift */,
+				B944F561015828DFD87580BA5C27F342 /* SessionManager.swift */,
+				0A6D3B75A0A977AEDB870FD03F665668 /* TaskDelegate.swift */,
+				8A6E9C92ECA5A2496B783442D25EF011 /* Timeline.swift */,
+				35FBF74C3A3A7BE5D4E0297657DF2EE9 /* Validation.swift */,
+				0B8A4BDA6358E2F89E15D8862991EEE7 /* Support Files */,
 			);
-			name = Signals;
-			path = Signals;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		59F761F4FE04FBD9A1430144197B1580 /* Products */ = {
+		0B8A4BDA6358E2F89E15D8862991EEE7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6277496E7AD8B0527A54DECCEA3B7349 /* Alamofire.framework */,
-				E73A60AE2A7AE232FE18511637C9CF23 /* Pods_TripManagerApp.framework */,
-				8F752BA1851194C9C0094E339598E404 /* Signals.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		60F47736B7D5E7E11B9DF69631FAC0F2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1FB26DB6993C76D4F9BE0DFC36F7CD0E /* Info.plist */,
-				C20D08B622A423F27CFC7067B6F49DCD /* Signals.modulemap */,
-				A2257F3E19BB0F782181009093C06D90 /* Signals.xcconfig */,
-				8D793F65E88F6D389A9BBD2F616DEC1B /* Signals-dummy.m */,
-				D6223912DF7B5612ED3DDD1490837F00 /* Signals-prefix.pch */,
-				EAB274DD5916B8C642FB4B0B0DF9DCAE /* Signals-umbrella.h */,
+				A16C3A1066C9BB981B272272722C2BCC /* Alamofire.modulemap */,
+				2DF8F83D14B836F051507708AFCD593C /* Alamofire.xcconfig */,
+				9CD8517D8EC6F098F472F4147455D266 /* Alamofire-dummy.m */,
+				433B879AB0BC79DE744EE0157E2DC00D /* Alamofire-prefix.pch */,
+				0FE724E7FFB2A62112C1C13536C95588 /* Alamofire-umbrella.h */,
+				F41FFBEC497DFB3BDE055B66C8ECFA9A /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Signals";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		2FB27A21E95B57170CAE03CA542F28DF /* KWDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				F3CA2E69DD2878626A02D2C66FD249C7 /* DrawerAnimator.swift */,
+				0927833313DD2E46E06B605FA9F544D3 /* DrawerBackEaseAnimator.swift */,
+				C8958E771B488B2F1F919713A1DAFB51 /* DrawerBounceEaseAnimator.swift */,
+				7525656D3608583BC94AB5106D89C76D /* DrawerCircEaseAnimator.swift */,
+				E2D81E14A0AB6F0DAF7707F637A7A9B5 /* DrawerContent.swift */,
+				D29AC2F8A191F6187C1DB22A7FFEBBAD /* DrawerController.swift */,
+				363CCCCFF817072ACA4AC186C94E970E /* DrawerCubicEaseAnimator.swift */,
+				D88EEDB89E07D38196694F1E9706AEB5 /* DrawerCurveEaseAnimator.swift */,
+				418172AE3974D11FD9251A1FC8072394 /* DrawerElasticEaseAnimator.swift */,
+				3EB45774921DE2F435F51B786F011043 /* DrawerEmbedLeftControllerSegue.swift */,
+				0EAD79C5AE51DBC26B3890AB2E4E5B59 /* DrawerEmbedMainControllerSegue.swift */,
+				89696E3D183BC5CF640C37A92674B50E /* DrawerEmbedRightControllerSegue.swift */,
+				4C592D67C8B91042BCC273B102E58784 /* DrawerExpoEaseAnimator.swift */,
+				5FA6440E1E2769D8010330FBFB907C05 /* DrawerFloatTransition.swift */,
+				F79E089FC90824D00205525E789D1654 /* DrawerFoldTransition.swift */,
+				26685C47498C7AB65125E0BE0FA6F82B /* DrawerGestureSensitivity.swift */,
+				B4939FBA03AFC252EDE8C258EC2A1C1A /* DrawerLinearAnimator.swift */,
+				D039DFF7BABA2AFEC75F575CE84CBA12 /* DrawerOption.swift */,
+				3F72CC278380E9E200970CD42E13F0BE /* DrawerParallaxTransition.swift */,
+				CAD7969CCCB48EEA631D428772B8ED40 /* DrawerQuadEaseAnimator.swift */,
+				8CD9BB2A1BFF62134D8EEDBFAD428CDE /* DrawerQuartEaseAnimator.swift */,
+				CF269237CF34C5D1B55DC2309BDAAE41 /* DrawerQuintEaseAnimator.swift */,
+				9C87A81F8E227FD1E02018602F34D2F3 /* DrawerScaleTransition.swift */,
+				9E4B4B62084734655890185FED895F87 /* DrawerSide.swift */,
+				2A7D0533A405306066A442E3077543CC /* DrawerSineEaseAnimator.swift */,
+				058D24E0BC03E5667D20DD193F4B72D3 /* DrawerSlideTransition.swift */,
+				9A52231AC82008A0150FCCAEA867EACA /* DrawerSpringAnimator.swift */,
+				A3ED093ECD21CAAD8E6667E8EBD155FB /* DrawerSwingTransition.swift */,
+				A2C33E03EDC94FF473FD8E74D1A25F1F /* DrawerTickAnimator.swift */,
+				2D42CDDEFA2670DD361ADEF5DD51EBB1 /* DrawerTransition.swift */,
+				B92D36DAB7DCA75806CE69F9014F8FDB /* DrawerZoomTransition.swift */,
+				4E1721A328259CB02A1F81145E5B297B /* TranslucentView.swift */,
+				9F81047401971F5C028D300F7E2A5D10 /* UIViewController+DrawerController.swift */,
+				AB10B3380E8BFDECCDF9A095F3687DF2 /* Support Files */,
+			);
+			name = KWDrawerController;
+			path = KWDrawerController;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7313E4EB784957903851D952F77C27E2 /* Targets Support Files */ = {
@@ -177,50 +325,73 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		76FDFDF0DD2B5222435F37470A95AF3A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8DC829CC77E570A31DBA6F2A5CA5E1C0 /* Pods */,
-				59F761F4FE04FBD9A1430144197B1580 /* Products */,
-				7313E4EB784957903851D952F77C27E2 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8DC829CC77E570A31DBA6F2A5CA5E1C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9EA92FB39CF51FD2BB70A0018FD27E67 /* Alamofire */,
-				4E01F7627C722DB0B66AD70C60C177C2 /* Signals */,
+				05561B3B691326F4D5C7A1F8155C9580 /* Alamofire */,
+				2FB27A21E95B57170CAE03CA542F28DF /* KWDrawerController */,
+				E63E6E84435FA8B3798D134A135B8A39 /* Signals */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9EA92FB39CF51FD2BB70A0018FD27E67 /* Alamofire */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				B3F48CEF2BF34D918D69FB1257C608FB /* AFError.swift */,
-				37269159F1FE807770922743AC06E8FB /* Alamofire.swift */,
-				931612B4412BB2BA5EF02A75B026672F /* DispatchQueue+Alamofire.swift */,
-				4E342ED11C5A42D4C1789C776A7539E5 /* MultipartFormData.swift */,
-				5214CBAF4EA63D5A131E2877ECBC020C /* NetworkReachabilityManager.swift */,
-				A704F9932CC997597628D8CE01723D5E /* Notifications.swift */,
-				120701E6BDF304327EAF6E5840C53EA0 /* ParameterEncoding.swift */,
-				34C9460EE8B1BFA46753DF68AECB19B4 /* Request.swift */,
-				6F77DCCBC6F228CC906A591B2A07346C /* Response.swift */,
-				C4228176AC10B9C035B65FD9410A9D5E /* ResponseSerialization.swift */,
-				EC4F727610AA8A5A10E0C406BB34340E /* Result.swift */,
-				63473B7C71614782CEA31BED0B9A0F2A /* ServerTrustPolicy.swift */,
-				1A3D5620EB926CCF857479AECEFB0049 /* SessionDelegate.swift */,
-				2D2A2F2E2F83F40352133B8428CFE90E /* SessionManager.swift */,
-				CDF4C8BC0CB0B906E909FEB979A17488 /* TaskDelegate.swift */,
-				72F41598231741BC93013468D2E7FB5E /* Timeline.swift */,
-				287D57CE6B9E952FAE896C6B2C8968AA /* Validation.swift */,
-				D3FE0AD564DF2E717E787A6F7CD55754 /* Support Files */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				76FDFDF0DD2B5222435F37470A95AF3A /* Pods */,
+				9D3990EE8AC7D6DC4FAB076C292A794B /* Products */,
+				7313E4EB784957903851D952F77C27E2 /* Targets Support Files */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
+				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9D3990EE8AC7D6DC4FAB076C292A794B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD68BF610B1616FDD53D8DD2DE4BEF09 /* Alamofire.framework */,
+				4B419C3330DBB073C03D6FE9647EF775 /* KWDrawerController.framework */,
+				4BFAD3F8AA8549FA8005310A82CAE1F2 /* Pods_TripManagerApp.framework */,
+				190830BCB4D9832F7B00254492280F80 /* Signals.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB10B3380E8BFDECCDF9A095F3687DF2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1923012AC04097702D4A4B24A6DF61 /* Info.plist */,
+				C6A7AB6765E27AF6547D8D492A2DF2B6 /* KWDrawerController.modulemap */,
+				FF0ADA11D27CEE6ACFFB44EE35A686BE /* KWDrawerController.xcconfig */,
+				11B57C03FCA14C3530A3A5BDCCFD1F54 /* KWDrawerController-dummy.m */,
+				966532616496FED33E1C0397136C8756 /* KWDrawerController-prefix.pch */,
+				B18859ACF59E05CCC8B19DC39C5E4DBF /* KWDrawerController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KWDrawerController";
+			sourceTree = "<group>";
+		};
+		AECB9B221D9955EA1308020818A45956 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59061FE3C663C8FF08D92D867E41C463 /* Info.plist */,
+				95E5D27FBBFE2B8C7FABDAC645CBA854 /* Signals.modulemap */,
+				0EFA61BEAF82C237E09F08B46761626D /* Signals.xcconfig */,
+				9A1750B8BD040373F3FD72355B7C2DE0 /* Signals-dummy.m */,
+				CFAC86C28F3B766735CED45E4A6337D6 /* Signals-prefix.pch */,
+				44464C6CAA885B0B2FE73A0F724085BD /* Signals-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Signals";
 			sourceTree = "<group>";
 		};
 		BA071027C15252B9E813B8296324C00B /* Pods-TripManagerApp */ = {
@@ -241,52 +412,34 @@
 			path = "Target Support Files/Pods-TripManagerApp";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		E63E6E84435FA8B3798D134A135B8A39 /* Signals */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				00DACBED6B0C78D4E40AB7DD2AA88430 /* AssociatedObject.swift */,
+				92A18F9E0F97D27F72AB0AD8514EE8AD /* Signal.swift */,
+				F744C46DFDB45CCE16B200E1B59874CF /* UIControl+Signals.swift */,
+				AECB9B221D9955EA1308020818A45956 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D3FE0AD564DF2E717E787A6F7CD55754 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9F69F8C4845DAD9185C802FDD48A0530 /* Alamofire.modulemap */,
-				61599563577C5403157C3D8F03B5C393 /* Alamofire.xcconfig */,
-				C42F57890DC4F3F67264B7EE279CE0FE /* Alamofire-dummy.m */,
-				BC1561D1AC090F419FCC47B609B6ABF0 /* Alamofire-prefix.pch */,
-				887ABEBDCA3A137B6C9A6A501B96BE4D /* Alamofire-umbrella.h */,
-				143004C7469593E2416651B07CE9C100 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			name = Signals;
+			path = Signals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1119F5E3C7A0722D6148C0517A96AA5E /* Headers */ = {
+		1E0497F9661F1042EE3E39FF294DB958 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				590A825C74C6E556D2C1E8271BA5715F /* Signals-umbrella.h in Headers */,
+				7CDE2EF7384C5F7B12CE58399EF2633E /* KWDrawerController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65683FA1D3AE89FA12CAE2BA88004518 /* Headers */ = {
+		70D08670F454D285C39262F73C850ED2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21FB33746F2DACC528BD41D57404DED /* Pods-TripManagerApp-umbrella.h in Headers */,
+				B47C03964AAD5BC4B68DD8055B2394BD /* Pods-TripManagerApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,24 +451,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F670F4D53E633D66844F0922DE2C1663 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EF63D0CA18BA1D4CCCB7F7A0C17B9F /* Signals-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		762E036E3A9976F210AA3CBA1D05D044 /* Signals */ = {
+		20FFE4EFADC3863A5E4D67705EC0F419 /* Pods-TripManagerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E4145A64AC5A08760F897C397DA2373 /* Build configuration list for PBXNativeTarget "Signals" */;
+			buildConfigurationList = 3662466C84B35D70943CE6ACC57073E3 /* Build configuration list for PBXNativeTarget "Pods-TripManagerApp" */;
 			buildPhases = (
-				879BC9439B9B0747F841A2354D7634C2 /* Sources */,
-				9CC98985C70978ADE84D7421D5211F2C /* Frameworks */,
-				1119F5E3C7A0722D6148C0517A96AA5E /* Headers */,
+				85EF281C0003C1CF0B31924ED6C07C8D /* Sources */,
+				D1658258A1F446D9B3CE1C5D3C3CEF00 /* Frameworks */,
+				70D08670F454D285C39262F73C850ED2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				561942E3BB955AF574C056F7F3D87DBA /* PBXTargetDependency */,
+				F1F7EDDB1E8E66153578355B0552B4A4 /* PBXTargetDependency */,
+				23ED9DA217B61B33961C31FBB423926B /* PBXTargetDependency */,
 			);
-			name = Signals;
-			productName = Signals;
-			productReference = 8F752BA1851194C9C0094E339598E404 /* Signals.framework */;
+			name = "Pods-TripManagerApp";
+			productName = "Pods-TripManagerApp";
+			productReference = 4BFAD3F8AA8549FA8005310A82CAE1F2 /* Pods_TripManagerApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -332,26 +496,41 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 6277496E7AD8B0527A54DECCEA3B7349 /* Alamofire.framework */;
+			productReference = DD68BF610B1616FDD53D8DD2DE4BEF09 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2AC0D3F5B3153DB24B85C30D2C7635E /* Pods-TripManagerApp */ = {
+		9F974FE6F0EFF5F19A3A7D5357B8EC53 /* KWDrawerController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBF4C6717767FB762070752CA6438232 /* Build configuration list for PBXNativeTarget "Pods-TripManagerApp" */;
+			buildConfigurationList = 2607EE738AAD335F9E96C1B3A6A9A7DE /* Build configuration list for PBXNativeTarget "KWDrawerController" */;
 			buildPhases = (
-				6587FB2255E0B0051CEDE1B4A63890E5 /* Sources */,
-				E3064B3C8844A09482B84360F92B5E17 /* Frameworks */,
-				65683FA1D3AE89FA12CAE2BA88004518 /* Headers */,
+				8884DEE931791FB19676D9F65E110698 /* Sources */,
+				CD6EE65D179C94FEE12557004BBAD1FC /* Frameworks */,
+				1E0497F9661F1042EE3E39FF294DB958 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05344591DE9947F2C2A102821A2C6F5D /* PBXTargetDependency */,
-				0C5FF79049D0D320D92C50169C502332 /* PBXTargetDependency */,
 			);
-			name = "Pods-TripManagerApp";
-			productName = "Pods-TripManagerApp";
-			productReference = E73A60AE2A7AE232FE18511637C9CF23 /* Pods_TripManagerApp.framework */;
+			name = KWDrawerController;
+			productName = KWDrawerController;
+			productReference = 4B419C3330DBB073C03D6FE9647EF775 /* KWDrawerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D96FDBEB9DA718DBED53FDE9927B7D52 /* Signals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0B8E0B38719783002901178F2DD8B9 /* Build configuration list for PBXNativeTarget "Signals" */;
+			buildPhases = (
+				55038032D0F88DDAD82A28AC875BD6C7 /* Sources */,
+				F0A058CF3809C80BECF03CBB345A2ED8 /* Frameworks */,
+				F670F4D53E633D66844F0922DE2C1663 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Signals;
+			productName = Signals;
+			productReference = 190830BCB4D9832F7B00254492280F80 /* Signals.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,13 +550,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 59F761F4FE04FBD9A1430144197B1580 /* Products */;
+			productRefGroup = 9D3990EE8AC7D6DC4FAB076C292A794B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				A2AC0D3F5B3153DB24B85C30D2C7635E /* Pods-TripManagerApp */,
-				762E036E3A9976F210AA3CBA1D05D044 /* Signals */,
+				9F974FE6F0EFF5F19A3A7D5357B8EC53 /* KWDrawerController */,
+				20FFE4EFADC3863A5E4D67705EC0F419 /* Pods-TripManagerApp */,
+				D96FDBEB9DA718DBED53FDE9927B7D52 /* Signals */,
 			);
 		};
 /* End PBXProject section */
@@ -408,43 +588,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6587FB2255E0B0051CEDE1B4A63890E5 /* Sources */ = {
+		55038032D0F88DDAD82A28AC875BD6C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8AC88BD13EEF23583A1DC5266C0BD7 /* Pods-TripManagerApp-dummy.m in Sources */,
+				F6E7AD231DA2AF43B0CE00F76604CA9A /* AssociatedObject.swift in Sources */,
+				352AABE5027FAFCE61163D14DB431875 /* Signal.swift in Sources */,
+				DF72164CF9A05122F616F61A554A69A7 /* Signals-dummy.m in Sources */,
+				0A88D8B14814C2C976852DD3074EB647 /* UIControl+Signals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		879BC9439B9B0747F841A2354D7634C2 /* Sources */ = {
+		85EF281C0003C1CF0B31924ED6C07C8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA9248AF75A8426DD81C152C9744C63 /* AssociatedObject.swift in Sources */,
-				988413FD7F71107F5D5704B5A488FB0B /* Signal.swift in Sources */,
-				6DE0DBD6BEEA3D061CD95BA735A68847 /* Signals-dummy.m in Sources */,
-				8255922C8653109EA71AB56FB43A22C7 /* UIControl+Signals.swift in Sources */,
+				AD691C85D421268D04B023158E0CC6B4 /* Pods-TripManagerApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8884DEE931791FB19676D9F65E110698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9B707F75E571E0DCD39A3E5003E65C /* DrawerAnimator.swift in Sources */,
+				4ADE46EEFA8A022935DD6CECFD6F7359 /* DrawerBackEaseAnimator.swift in Sources */,
+				B0828E11A66D985DB83CFE017A95E2FA /* DrawerBounceEaseAnimator.swift in Sources */,
+				CDE8AF4365F3F23E781ECE7371B65130 /* DrawerCircEaseAnimator.swift in Sources */,
+				37FD52C0DF489434CE22FDE86B3414DC /* DrawerContent.swift in Sources */,
+				E223595A9EB195931A10DC2A05E2BCCB /* DrawerController.swift in Sources */,
+				E6A48AD5354E13F7EB98EEA3CB13B2C4 /* DrawerCubicEaseAnimator.swift in Sources */,
+				EBFC197CE9E08C4288CA477AB68EDF47 /* DrawerCurveEaseAnimator.swift in Sources */,
+				B3C19494F7D32799772650F64694FB91 /* DrawerElasticEaseAnimator.swift in Sources */,
+				D93E86270770CD57D744CC8D63A2E02C /* DrawerEmbedLeftControllerSegue.swift in Sources */,
+				4DAB86004919372F62368E88C1F1A707 /* DrawerEmbedMainControllerSegue.swift in Sources */,
+				DB801CE33AEDE18C9808530FE3F779A3 /* DrawerEmbedRightControllerSegue.swift in Sources */,
+				AE03F0E18C49267DDD8A96B092339738 /* DrawerExpoEaseAnimator.swift in Sources */,
+				6CF8449F8B7A7BC2D211DD977FF7D888 /* DrawerFloatTransition.swift in Sources */,
+				5B3B6E186FC69CA701FED184B44CEBC1 /* DrawerFoldTransition.swift in Sources */,
+				5646130D6CE2648547D2206806F04B47 /* DrawerGestureSensitivity.swift in Sources */,
+				8BCAD304CDB268982D68EB012A776E8F /* DrawerLinearAnimator.swift in Sources */,
+				6879F0F238F5ECEED5C76EF4E3E2BF69 /* DrawerOption.swift in Sources */,
+				D7DDE75A115F7F903083D4612DFB5080 /* DrawerParallaxTransition.swift in Sources */,
+				2847682F49CE5DC7FF06933D24CA540F /* DrawerQuadEaseAnimator.swift in Sources */,
+				B3544E18926ED5F1C47C5899D0785DE8 /* DrawerQuartEaseAnimator.swift in Sources */,
+				6CF562CBF09C03C48A2AB3532E32E3D7 /* DrawerQuintEaseAnimator.swift in Sources */,
+				A89DCDFCB3D41B977DF3303E19CD4BFE /* DrawerScaleTransition.swift in Sources */,
+				28DAD4E01BC20EC4FA2C64027816B720 /* DrawerSide.swift in Sources */,
+				534EB192AC0DEDA86AB5989B7F7C6B3A /* DrawerSineEaseAnimator.swift in Sources */,
+				71E91B029D9997E2FFFF9AFA8817CFFB /* DrawerSlideTransition.swift in Sources */,
+				E2322CA1921936EEEE8EEB4F4DF23B26 /* DrawerSpringAnimator.swift in Sources */,
+				4ACDC59C7BD19380DB4A55457E40EBC2 /* DrawerSwingTransition.swift in Sources */,
+				99495EB4268360A4EBE07A73E1108F4C /* DrawerTickAnimator.swift in Sources */,
+				615A424188958C373956DFA2CE1DD171 /* DrawerTransition.swift in Sources */,
+				23CE4D022297D95B233759C19A7BDB8C /* DrawerZoomTransition.swift in Sources */,
+				2DF6354B49445D8D84CE172F4DCC1E46 /* KWDrawerController-dummy.m in Sources */,
+				F23CD2895CD5F38D8FC60096DD540259 /* TranslucentView.swift in Sources */,
+				95CA39F9EEBA284B592DFC6C8585A0AF /* UIViewController+DrawerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05344591DE9947F2C2A102821A2C6F5D /* PBXTargetDependency */ = {
+		23ED9DA217B61B33961C31FBB423926B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Signals;
+			target = D96FDBEB9DA718DBED53FDE9927B7D52 /* Signals */;
+			targetProxy = C9ECFDAB1370E574299EEB566A8B8276 /* PBXContainerItemProxy */;
+		};
+		561942E3BB955AF574C056F7F3D87DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 30DDDC3FC013BEA8D83F3A0B193E6EF2 /* PBXContainerItemProxy */;
+			targetProxy = 9D0D05C064387C2B38E80916D2CF1B9D /* PBXContainerItemProxy */;
 		};
-		0C5FF79049D0D320D92C50169C502332 /* PBXTargetDependency */ = {
+		F1F7EDDB1E8E66153578355B0552B4A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Signals;
-			target = 762E036E3A9976F210AA3CBA1D05D044 /* Signals */;
-			targetProxy = 91C6CF7C501AE209173EA35AFC118964 /* PBXContainerItemProxy */;
+			name = KWDrawerController;
+			target = 9F974FE6F0EFF5F19A3A7D5357B8EC53 /* KWDrawerController */;
+			targetProxy = 30A45F311B74DE37EC77E9200439BD9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		07D8F9AA1047448FC7675159D52CA03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFA61BEAF82C237E09F08B46761626D /* Signals.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Signals/Signals-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Signals/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Signals/Signals.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Signals;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -493,7 +755,7 @@
 			};
 			name = Debug;
 		};
-		50DDAEDC3FEE70CB8A02E96505926A25 /* Release */ = {
+		629733715F1D7A4526F020B78838352F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C333876FE6051B3E5E1538713B18817C /* Pods-TripManagerApp.release.xcconfig */;
 			buildSettings = {
@@ -533,7 +795,7 @@
 		};
 		7D072D0D174F12EAACC1862DA756E67A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61599563577C5403157C3D8F03B5C393 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2DF8F83D14B836F051507708AFCD593C /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -565,9 +827,43 @@
 			};
 			name = Release;
 		};
-		94530281C4FFB51924C579877FBE7462 /* Debug */ = {
+		8830B9933C1C66F878F369E90869A75D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2257F3E19BB0F782181009093C06D90 /* Signals.xcconfig */;
+			baseConfigurationReference = 0EFA61BEAF82C237E09F08B46761626D /* Signals.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Signals/Signals-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Signals/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Signals/Signals.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Signals;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8A39A6C5718F4AFFFD0F6BBE211FB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07F4DAC3A443707FD241D47DAD8DD79 /* Pods-TripManagerApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -581,14 +877,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Signals/Signals-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Signals/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TripManagerApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Signals/Signals.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Signals;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TripManagerApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -646,7 +946,7 @@
 		};
 		C9660A42FEDD040185578ADA021EC8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61599563577C5403157C3D8F03B5C393 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2DF8F83D14B836F051507708AFCD593C /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -679,9 +979,9 @@
 			};
 			name = Debug;
 		};
-		CE96D9DE31D12A63108D40A282694698 /* Release */ = {
+		CFCD4D35EC559EAAAA685777C45D5383 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2257F3E19BB0F782181009093C06D90 /* Signals.xcconfig */;
+			baseConfigurationReference = FF0ADA11D27CEE6ACFFB44EE35A686BE /* KWDrawerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -695,14 +995,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Signals/Signals-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Signals/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KWDrawerController/KWDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KWDrawerController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Signals/Signals.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KWDrawerController/KWDrawerController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Signals;
+				PRODUCT_NAME = KWDrawerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -713,9 +1013,9 @@
 			};
 			name = Release;
 		};
-		DF4B0C009F352BDE9755BB62E19D999C /* Debug */ = {
+		E750B89EBC49AF7CBB504DC15FD542E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D07F4DAC3A443707FD241D47DAD8DD79 /* Pods-TripManagerApp.debug.xcconfig */;
+			baseConfigurationReference = FF0ADA11D27CEE6ACFFB44EE35A686BE /* KWDrawerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -729,18 +1029,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TripManagerApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KWDrawerController/KWDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KWDrawerController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KWDrawerController/KWDrawerController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TripManagerApp;
+				PRODUCT_NAME = KWDrawerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -755,6 +1051,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F0B8E0B38719783002901178F2DD8B9 /* Build configuration list for PBXNativeTarget "Signals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D8F9AA1047448FC7675159D52CA03C /* Debug */,
+				8830B9933C1C66F878F369E90869A75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607EE738AAD335F9E96C1B3A6A9A7DE /* Build configuration list for PBXNativeTarget "KWDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E750B89EBC49AF7CBB504DC15FD542E9 /* Debug */,
+				CFCD4D35EC559EAAAA685777C45D5383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -764,29 +1078,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3662466C84B35D70943CE6ACC57073E3 /* Build configuration list for PBXNativeTarget "Pods-TripManagerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A39A6C5718F4AFFFD0F6BBE211FB65 /* Debug */,
+				629733715F1D7A4526F020B78838352F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9660A42FEDD040185578ADA021EC8E0 /* Debug */,
 				7D072D0D174F12EAACC1862DA756E67A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E4145A64AC5A08760F897C397DA2373 /* Build configuration list for PBXNativeTarget "Signals" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94530281C4FFB51924C579877FBE7462 /* Debug */,
-				CE96D9DE31D12A63108D40A282694698 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBF4C6717767FB762070752CA6438232 /* Build configuration list for PBXNativeTarget "Pods-TripManagerApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF4B0C009F352BDE9755BB62E19D999C /* Debug */,
-				50DDAEDC3FEE70CB8A02E96505926A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

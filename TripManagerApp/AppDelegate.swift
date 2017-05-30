@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import KWDrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var navController: UINavigationController?
     
     static func getInstance() -> AppDelegate {
        return UIApplication.shared.delegate as! AppDelegate
@@ -23,16 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.main.bounds)
+        //let controller = MainViewController(nibName: "MainView", bundle: nil)
         
-        let controller = MainViewController(nibName: "MainView", bundle: nil)
+        initMenuController()
  
-        window?.rootViewController = controller
-        
-        //showLoginController()
-
-        window?.makeKeyAndVisible()
-
         return true
     }
 
@@ -64,6 +58,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    func initMenuController () {
+        let mainViewController   = MainViewController(nibName: "MainView", bundle: nil)
+        let leftViewController   = MenuViewController(nibName: "MenuView", bundle: nil)
+        let drawerController     = DrawerController()
+        let navController = UINavigationController(rootViewController: mainViewController)
+
+        drawerController.setViewController(navController, side: .none)
+        drawerController.setViewController(leftViewController, side: .left)
+        
+        let width = Float(UIScreen.main.bounds.width)
+        drawerController.setDrawerWidth(drawerWidth: width * 0.85, side: .left)
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
+    }
     
     func showViewControllerController(viewController controller: BaseViewController) {
         window?.rootViewController = controller

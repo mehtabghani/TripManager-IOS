@@ -36,25 +36,17 @@ class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-
+        title = "Trip Manager"
+        showLoginIfRequired()
+        showMenuButton()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        showLoginIfRequired()
-
     }
     
 // MARK: -
@@ -86,7 +78,6 @@ class MainViewController: BaseViewController {
         _customMapView = view
         _mapView.addSubview(_customMapView!)
         _mapView.bringSubview(toFront: _customMapView!)
-        
     }
     
     func setupStartTripUI() {
@@ -97,6 +88,7 @@ class MainViewController: BaseViewController {
         _btnEndTrip.isHidden = true
         _btnStartTrip.isHidden = false
     }
+//MARK -
     
     func updateMap(location: CLLocation) {
     
@@ -114,8 +106,9 @@ class MainViewController: BaseViewController {
         _manager?.onCurrentLocationUpdate.subscribe(on: self, callback: { (location) in
             self._customMapView?.onLocationUpdate(location: location)
             
+            // less than 200 meters location won't be used
             if  self._lastLocation != nil && location.distance(from: self._lastLocation!) < 200 {
-                print (location.distance(from: self._lastLocation!))
+                print(location.distance(from: self._lastLocation!))
                 return
             }
             

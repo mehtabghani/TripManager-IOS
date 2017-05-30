@@ -9,6 +9,6 @@ target 'TripManagerApp' do
 
  pod 'Alamofire', '~> 4.4'
  pod 'Signals', '~> 4.0'
-
+ pod 'KWDrawerController' , '~> 3.5'
 
 end
