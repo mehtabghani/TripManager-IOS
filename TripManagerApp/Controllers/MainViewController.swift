@@ -69,8 +69,32 @@ class MainViewController: BaseViewController {
         _manager = LocationManager.sharedInstance;
 
         initMapView();
+        getUser();
         subscribeLocationUpdate()
     }
+    
+    func getUser() {
+        let userId = AppConfig.sharedInstance.getUser()?.userId
+        UserService().getUser(userID: userId!) { (response, error) in
+            guard error == nil else {
+                print(error!)
+                return;
+            }
+            guard response != nil else {
+                print("empty response")
+                return;
+            }
+            
+            let user = User()
+            user.setUser(input: response as? NSDictionary)
+            AppConfig.sharedInstance.saveUser(user: user)
+            
+        };
+        
+    }
+
+    
+//MARK: - UI
     
     func initMapView() {
         
@@ -88,11 +112,11 @@ class MainViewController: BaseViewController {
         _btnEndTrip.isHidden = true
         _btnStartTrip.isHidden = false
     }
-//MARK -
+//MARK: -
     
     func updateMap(location: CLLocation) {
     
-        print ("Location array count: \(self._locationCount)")
+        //print ("Location array count: \(self._locationCount)")
         self._tripLocations.insert(location, at: self._locationCount)
         self._locationCount += 1
         self._lastLocation = location

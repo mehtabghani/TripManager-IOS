@@ -15,11 +15,28 @@ import Alamofire
 class HTTPRequestManager: NSObject {
     
     
+    func getRequestHeaders(url: String)  -> [String: String] {
+    
+        var headers: HTTPHeaders = ["Accept": "application/json"]
+        
+        if let token = AppConfig.sharedInstance.getToken() {
+            headers[KeyConstants.access_token] = token
+        }
+        if url.contains("/login") || url.contains("/signup")   {
+            headers[KeyConstants.api_secret] = Constants.api_secret
+        }
+        
+        return headers;
+    }
+    
+    
     public func getRequest(url: String, completionBlock: @escaping completionBlock) {
         
         let _url =  URL(string: url)!
-        
-        Alamofire.request(_url, method: .get)
+        let headers = getRequestHeaders(url: url)
+
+       
+        Alamofire.request(_url, method: .get, headers: headers)
             .responseJSON { response in
             print(response.request!)  // original URL request
             //print(response.response!) // HTTP URL response
@@ -32,7 +49,7 @@ class HTTPRequestManager: NSObject {
             }
             
             if let JSON = response.result.value {
-                //print("JSON: \(JSON)")
+                print("JSON: \(JSON)")
                 completionBlock(JSON, nil)
             }
         }
@@ -41,13 +58,9 @@ class HTTPRequestManager: NSObject {
     public func postRequest(url: String, data: Dictionary<String, Any>, completionBlock: @escaping completionBlock) {
         
         let _url =  URL(string: url)!
+        let headers = getRequestHeaders(url: url);
         
-//        let headers: HTTPHeaders = [
-//            "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
-//            "Accept": "application/json"
-//        ]
-        
-        Alamofire.request(_url, method: .post, parameters: data, encoding:JSONEncoding.default)
+        Alamofire.request(_url, method: .post, parameters: data, encoding:JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 print(response.request!)  // original URL request
                 //print(response.response!) // HTTP URL response

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //let controller = MainViewController(nibName: "MainView", bundle: nil)
-        
+ 
         initMenuController()
  
         return true

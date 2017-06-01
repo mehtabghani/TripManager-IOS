@@ -74,15 +74,24 @@ class LoginViewController: BaseViewController  {
                 return;
             }
             
-            print("Response: \(response!)")
-
-            if let res = response as? NSDictionary {
-                //var userId = res["user_id"] as? String
-                let accessToken = res["access_token"] as? String
-                AppConfig.sharedInstance.saveAccesstoken(accessToken!)
-                
-            }
+           self.handleSuccess(response: response)
         })
+    }
+    
+    func handleSuccess(response: Any?) {
+        print("Response: \(response!)")
+        
+        if let res = response as? NSDictionary {
+            let userId = res["user_id"] as? String
+            let accessToken = res["access_token"] as? String
+            AppConfig.sharedInstance.saveAccesstoken(accessToken!)
+            
+            
+            let user = User()
+            user.userId = userId
+            AppConfig.sharedInstance.saveUser(user: user)
+            
+        }
     }
     
     func showSignUpScreen() {

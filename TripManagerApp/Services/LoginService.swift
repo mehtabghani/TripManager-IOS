@@ -12,10 +12,9 @@ import Alamofire
 
 class LoginService: BaseService {
     
-  
-
     private let routeLogin: String = "login"
-    
+    private let routeSignup: String = "signup"
+
     
     func login(input: Dictionary<String, Any>,  completionBlock: @escaping completionBlock) {
     
