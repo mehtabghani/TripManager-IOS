@@ -50,7 +50,7 @@ class LocationManager: NSObject {
     func setup() {
         _manager = CLLocationManager();
         _manager!.delegate = self;
-        _manager!.desiredAccuracy = kCLLocationAccuracyBest
+        _manager!.desiredAccuracy = kCLLocationAccuracyKilometer
         startMonitoring()
     }
     

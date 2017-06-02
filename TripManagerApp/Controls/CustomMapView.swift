@@ -38,7 +38,6 @@ class CustomMapView: BaseMapView {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-    
     }
     
     init() {
@@ -110,8 +109,6 @@ class CustomMapView: BaseMapView {
             }
         }
     }
-  
-   
 }
 
 

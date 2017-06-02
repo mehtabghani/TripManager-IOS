@@ -22,25 +22,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JC9-Jy-Eap" userLabel="View - Header">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="228.66666666666666"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="me6-sH-wta" userLabel="Image View - Profile">
-                            <rect key="frame" x="40" y="64.666666666666657" width="100" height="99.999999999999972"/>
+                            <rect key="frame" x="157.66666666666669" y="64.666666666666657" width="100.00000000000006" height="99.999999999999972"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="PJU-Lt-Kkq"/>
                                 <constraint firstAttribute="height" constant="100" id="pgc-AU-yF1"/>
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.62745098039215685" green="0.66666666666666663" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="me6-sH-wta" firstAttribute="leading" secondItem="JC9-Jy-Eap" secondAttribute="leading" constant="40" id="7nd-H4-tZu"/>
                         <constraint firstItem="me6-sH-wta" firstAttribute="centerY" secondItem="JC9-Jy-Eap" secondAttribute="centerY" id="Ulg-R8-BBI"/>
+                        <constraint firstItem="me6-sH-wta" firstAttribute="leading" secondItem="JC9-Jy-Eap" secondAttribute="leading" constant="157.66666666666669" id="iKg-jM-wKS"/>
+                        <constraint firstAttribute="trailing" secondItem="me6-sH-wta" secondAttribute="trailing" constant="156.33333333333326" id="w83-ll-Tds"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-0M-QvV" userLabel="Table View - Content">
-                    <rect key="frame" x="0.0" y="228.66666666666669" width="414" height="507.33333333333331"/>
-                    <color key="backgroundColor" red="0.78238703501663764" green="1" blue="0.8806095837345036" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="229" width="414" height="507"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
