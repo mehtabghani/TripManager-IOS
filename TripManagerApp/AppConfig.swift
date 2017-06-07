@@ -44,6 +44,10 @@ class AppConfig: NSObject {
         let userDefaults = UserDefaults.standard
         let data = userDefaults.data(forKey: KeyConstants.user)
         
+        guard data != nil else {
+            return nil
+        }
+        
         do {
             let jsonData = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
 

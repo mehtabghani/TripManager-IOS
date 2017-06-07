@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="TripManagerApp" customModuleProvider="target">
             <connections>
+                <outlet property="_lblUserName" destination="4ri-bA-CqG" id="s2a-oB-lHJ"/>
                 <outlet property="_menuTableView" destination="z4R-0M-QvV" id="vG4-X1-Ynr"/>
                 <outlet property="_profileImage" destination="me6-sH-wta" id="cY7-CE-qUi"/>
                 <outlet property="view" destination="iN0-l3-epB" id="5yv-1O-tEz"/>
@@ -22,31 +23,43 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JC9-Jy-Eap" userLabel="View - Header">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="me6-sH-wta" userLabel="Image View - Profile">
-                            <rect key="frame" x="157.66666666666669" y="64.666666666666657" width="100.00000000000006" height="99.999999999999972"/>
+                            <rect key="frame" x="158" y="79" width="100" height="100"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="PJU-Lt-Kkq"/>
-                                <constraint firstAttribute="height" constant="100" id="pgc-AU-yF1"/>
+                                <constraint firstAttribute="width" constant="100" id="Xw7-7M-bUx"/>
+                                <constraint firstAttribute="height" constant="100" id="m6t-86-7Uh"/>
                             </constraints>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jhon Cena" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ri-bA-CqG">
+                            <rect key="frame" x="60" y="209" width="294" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="leC-JX-Ot2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="me6-sH-wta" firstAttribute="centerY" secondItem="JC9-Jy-Eap" secondAttribute="centerY" id="Ulg-R8-BBI"/>
-                        <constraint firstItem="me6-sH-wta" firstAttribute="leading" secondItem="JC9-Jy-Eap" secondAttribute="leading" constant="157.66666666666669" id="iKg-jM-wKS"/>
-                        <constraint firstAttribute="trailing" secondItem="me6-sH-wta" secondAttribute="trailing" constant="156.33333333333326" id="w83-ll-Tds"/>
+                        <constraint firstItem="4ri-bA-CqG" firstAttribute="leading" secondItem="JC9-Jy-Eap" secondAttribute="leading" constant="60" id="5YY-4i-MwG"/>
+                        <constraint firstAttribute="bottom" secondItem="4ri-bA-CqG" secondAttribute="bottom" constant="21" id="5j4-sK-i8t"/>
+                        <constraint firstItem="4ri-bA-CqG" firstAttribute="centerX" secondItem="JC9-Jy-Eap" secondAttribute="centerX" id="FMM-tf-89r"/>
+                        <constraint firstItem="me6-sH-wta" firstAttribute="centerY" secondItem="JC9-Jy-Eap" secondAttribute="centerY" id="Nan-bE-tew"/>
+                        <constraint firstItem="me6-sH-wta" firstAttribute="centerX" secondItem="JC9-Jy-Eap" secondAttribute="centerX" constant="1" id="RpH-Mj-hia"/>
+                        <constraint firstItem="4ri-bA-CqG" firstAttribute="top" secondItem="me6-sH-wta" secondAttribute="bottom" constant="30" id="xMk-xS-pKh"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-0M-QvV" userLabel="Table View - Content">
-                    <rect key="frame" x="0.0" y="229" width="414" height="507"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-0M-QvV" userLabel="Table View - Content">
+                    <rect key="frame" x="0.0" y="259" width="414" height="477"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="JC9-Jy-Eap" firstAttribute="height" secondItem="z4R-0M-QvV" secondAttribute="height" multiplier="0.45" constant="1" id="7FD-Wm-82J"/>
+                <constraint firstItem="JC9-Jy-Eap" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.35" constant="1" id="8RL-cl-gpU"/>
                 <constraint firstItem="JC9-Jy-Eap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IDF-aD-Qtt"/>
                 <constraint firstItem="z4R-0M-QvV" firstAttribute="top" secondItem="JC9-Jy-Eap" secondAttribute="bottom" id="MOM-cU-jpv"/>
                 <constraint firstItem="z4R-0M-QvV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NrP-Pv-GJL"/>
@@ -56,7 +69,7 @@
                 <constraint firstAttribute="trailing" secondItem="z4R-0M-QvV" secondAttribute="trailing" id="wPt-Ia-J4I"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <point key="canvasLocation" x="26.5" y="51.5"/>
+            <point key="canvasLocation" x="26" y="51"/>
         </view>
     </objects>
     <resources>

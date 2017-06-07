@@ -75,6 +75,11 @@ class MainViewController: BaseViewController {
     
     func getUser() {
         let userId = AppConfig.sharedInstance.getUser()?.userId
+        
+        guard userId != nil else {
+            return;
+        }
+        
         UserService().getUser(userID: userId!) { (response, error) in
             guard error == nil else {
                 print(error!)

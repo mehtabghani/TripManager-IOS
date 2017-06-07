@@ -13,6 +13,10 @@ import KWDrawerController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var menuDict:Dictionary<String, String>?
+    var navController: UINavigationController?
+    var drawerController:DrawerController?
+    
     
     static func getInstance() -> AppDelegate {
        return UIApplication.shared.delegate as! AppDelegate
@@ -61,32 +65,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initMenuController () {
         let mainViewController   = MainViewController(nibName: "MainView", bundle: nil)
         let leftViewController   = MenuViewController(nibName: "MenuView", bundle: nil)
-        let drawerController     = DrawerController()
-        let navController = UINavigationController(rootViewController: mainViewController)
+        drawerController         = DrawerController()
+        navController            = UINavigationController(rootViewController: mainViewController)
 
-        drawerController.setViewController(navController, side: .none)
-        drawerController.setViewController(leftViewController, side: .left)
+        drawerController?.setViewController(navController, side: .none)
+        drawerController?.setViewController(leftViewController, side: .left)
         
         let width = Float(UIScreen.main.bounds.width)
-        drawerController.setDrawerWidth(drawerWidth: width * 0.85, side: .left)
+        drawerController?.setDrawerWidth(drawerWidth: width * Float(Constants.drawer_width_factor), side: .left)
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()
+        
+        readMenuPList()
     }
     
-    func showViewControllerController(viewController controller: BaseViewController) {
+    func setRootViewController(viewController controller: BaseViewController) {
         window?.rootViewController = controller
+    }
+    
+    func showViewController(viewController controller: BaseViewController) {
+        navController?.setViewControllers([controller], animated: true)
+        drawerController?.closeSide()
     }
     
     func showLoginController() {
         let controller = LoginViewController(nibName: "LoginView", bundle: nil)
-        showViewControllerController(viewController: controller)
+        setRootViewController(viewController: controller)
     }
     
     func showSignUpController() {
         let controller = SignUpViewController(nibName: "SignUpView", bundle: nil)
-        showViewControllerController(viewController: controller)
+        setRootViewController(viewController: controller)
+    }
+// MARK: - Side Menu Methods
+    
+    func showStartTripController() {
+        
+        if  navController?.topViewController is MainViewController  {
+            self.drawerController?.closeSide()
+            return
+        }
+        
+        let controller = MainViewController(nibName: "MainView", bundle: nil)
+        showViewController(viewController: controller)
+
+    }
+    
+    func showLogoutController() {
+    }
+    
+    func showTripHistory() {
+
+    }
+    
+    func showProfileController() {
+        let controller = ProfileViewController(nibName: "ProfileView", bundle: nil)
+        showViewController(viewController: controller)
+    }
+    
+    func navigateToMenu(menuName: String) {
+        let methodName = menuDict?[menuName]
+        perform(Selector(methodName!))
+    }
+// MARK: - Menu Plist Method
+    func readMenuPList () {
+        
+        if let url = Bundle.main.url(forResource:"menu", withExtension: "plist") {
+            do {
+                let data = try Data(contentsOf:url)
+                menuDict = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String:String]
+            } catch {
+                print(error)
+            }
+        }
     }
 
 }

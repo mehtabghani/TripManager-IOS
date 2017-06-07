@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Start Trip</key>
+	<string>showStartTripController</string>
+	<key>Trip History</key>
+	<string>showTripHistory</string>
+	<key>Profile</key>
+	<string>showProfileController</string>
+	<key>Logout</key>
+	<string>showLogoutController</string>
+</dict>
+</plist>

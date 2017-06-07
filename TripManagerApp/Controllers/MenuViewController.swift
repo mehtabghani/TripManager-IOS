@@ -11,7 +11,8 @@ import UIKit
 extension MenuViewController : UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped on \(menuItems[indexPath.row]).")
+        let item = menuItems[indexPath.row]
+        AppDelegate.getInstance().navigateToMenu(menuName: item)
     }
 }
 
@@ -41,8 +42,7 @@ extension MenuViewController : UITableViewDataSource {
 
 class MenuViewController: BaseViewController {
     
-    
-    let menuItems = ["Profile","Trip History","Logout"]
+    let menuItems = Constants.menu
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
@@ -50,31 +50,44 @@ class MenuViewController: BaseViewController {
     //MARK: Outlet
     
     @IBOutlet weak var _profileImage: UIImageView!
+    @IBOutlet weak var _lblUserName: UILabel!
     @IBOutlet weak var _menuTableView: UITableView!
-    //MARK: Constraints
-  
-    @IBOutlet weak var _headerTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var _tableTrailingConstraint: NSLayoutConstraint!
+
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        setup()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupTableView()
     }
     
-    func setup() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let centerX = self.view.center.x * CGFloat(Constants.drawer_width_factor)
+        _profileImage.center.x = centerX
+        _lblUserName.center.x = centerX
+       
+    }
+
+    override func viewWillLayoutSubviews() {
+    }
+    
+    override func viewDidLayoutSubviews() {
+        setupUi()
+
+    }
+    
+    func setupUi() {
         createGradientLayer()
         _profileImage.layer.cornerRadius = _profileImage.frame.height/2
         _profileImage.layer.masksToBounds = true
+        _lblUserName.text = AppConfig.sharedInstance.getUser()?.userName?.capitalized
+ 
         
-        
+         _menuTableView.frame = CGRect(x: _menuTableView.frame.origin.x, y: _menuTableView.frame.origin.y, width: self.view.frame.width * CGFloat(0.80), height: _menuTableView.frame.height)
+    }
+    
+    func setupTableView() {
+      
         // Register the table view cell class and its reuse id
         _menuTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         _menuTableView.delegate = self
@@ -83,14 +96,13 @@ class MenuViewController: BaseViewController {
     
     func createGradientLayer() {
        let  gradientLayer = CAGradientLayer()
-        
-        gradientLayer.frame = self.view.bounds
+        //let bounds = UIScreen.main.bounds
+        gradientLayer.frame = self.view.frame//bounds
         
         let colorTop = UIColor(red: 192.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 35.0 / 255.0, green: 2.0 / 255.0, blue: 2.0 / 255.0, alpha: 1.0).cgColor
         gradientLayer.colors = [colorTop, colorBottom]
         self.view.layer.insertSublayer(gradientLayer, at: 0)
-        
     }
-
+    
 }

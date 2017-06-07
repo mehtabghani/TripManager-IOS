@@ -45,7 +45,7 @@ class BaseViewController: UIViewController {
     }
     
     func showMenuButton() {
-        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 32))
         menuButton.setBackgroundImage(UIImage(named: "menu_icon"), for: .normal)
         menuButton.addTarget(self, action: #selector(onMenuPressed), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)

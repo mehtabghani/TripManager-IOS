@@ -11,6 +11,9 @@ import Foundation
 
 struct Constants {
     static let api_secret = "zax-scd"
+    static let drawer_width_factor = 0.85
+    static let menu = ["Start Trip","Profile","Trip History","Logout"]
+    static let title_Profile = "Profile"
     
     
 }
