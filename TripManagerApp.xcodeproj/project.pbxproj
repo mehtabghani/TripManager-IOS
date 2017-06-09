@@ -20,6 +20,9 @@
 		1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */; };
 		1B6B45351ED5BA5200612EC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45341ED5BA5200612EC7 /* LocationManager.swift */; };
 		1B6B45381ED5BB0300612EC7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */; };
+		1BA6D5CE1EEA79A8009C397A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6D5CD1EEA79A8009C397A /* Utils.swift */; };
+		1BA6D5D01EEA7E61009C397A /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6D5CF1EEA7E61009C397A /* TripService.swift */; };
+		1BA6D5D21EEA82BF009C397A /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6D5D11EEA82BF009C397A /* Trip.swift */; };
 		1BB4CE161ED6A6B0003505DB /* Signals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB4CE151ED6A6B0003505DB /* Signals.framework */; };
 		1BB8533F1EE572DC0023E821 /* menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8533E1EE572DC0023E821 /* menu.plist */; };
 		1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */; };
@@ -58,6 +61,9 @@
 		1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMapView.xib; sourceTree = "<group>"; };
 		1B6B45341ED5BA5200612EC7 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1B6B45371ED5BB0300612EC7 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		1BA6D5CD1EEA79A8009C397A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1BA6D5CF1EEA7E61009C397A /* TripService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
+		1BA6D5D11EEA82BF009C397A /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = Models/Trip.swift; sourceTree = "<group>"; };
 		1BB4CE151ED6A6B0003505DB /* Signals.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Signals.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/Signals/Signals.framework"; sourceTree = "<group>"; };
 		1BB4CE191ED6F283003505DB /* Cupertino CA USA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cupertino CA USA.gpx"; sourceTree = "<group>"; };
 		1BB8533E1EE572DC0023E821 /* menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = menu.plist; path = Plist/menu.plist; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 				1BBB09D91ED30C5500F73B77 /* BaseService.swift */,
 				1BBB09D71ED30C4700F73B77 /* LoginService.swift */,
 				1B47DA001EDFEDB500025710 /* UserService.swift */,
+				1BA6D5CF1EEA7E61009C397A /* TripService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 		1B1DB1C51ECED07B00600AA6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1BA6D5CD1EEA79A8009C397A /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				1B47D9FE1EDFEAFD00025710 /* User.swift */,
+				1BA6D5D11EEA82BF009C397A /* Trip.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -412,8 +421,10 @@
 				1BC18D5D1EDD4B9100D1578D /* MenuViewController.swift in Sources */,
 				1BE2EC8F1EE7DDFA0038F257 /* ProfileViewController.swift in Sources */,
 				1B47D9FC1EDFEA0400025710 /* KeyConstants.swift in Sources */,
+				1BA6D5D21EEA82BF009C397A /* Trip.swift in Sources */,
 				1BBB09DA1ED30C5500F73B77 /* BaseService.swift in Sources */,
 				1BBB09D31ED2FA7300F73B77 /* LoginViewController.swift in Sources */,
+				1BA6D5D01EEA7E61009C397A /* TripService.swift in Sources */,
 				1B1DB1A61ECEBDCB00600AA6 /* AppDelegate.swift in Sources */,
 				1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */,
 				1B6B452E1ED55E9C00612EC7 /* CustomMapView.swift in Sources */,
@@ -425,6 +436,7 @@
 				1B47DA011EDFEDB500025710 /* UserService.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B47D9FF1EDFEAFD00025710 /* User.swift in Sources */,
+				1BA6D5CE1EEA79A8009C397A /* Utils.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
 				1BC18D591EDD358200D1578D /* BaseMapView.swift in Sources */,
 				1BBB09D81ED30C4700F73B77 /* LoginService.swift in Sources */,

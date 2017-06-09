@@ -24,6 +24,13 @@ class MainViewController: BaseViewController {
     var _tripStatus:TripStatus = .end
     var _locationCount = 0
     var _lastLocation:CLLocation?
+    var _user:User?
+    var _startLocation:CLLocation?
+    var _endLocation:CLLocation?
+    var _tripStartTime:Date?
+    var _tripEndTime:Date?
+    
+    let activityIndicator = UIActivityIndicatorView()
 
     
 // MARK: - IBOutlet
@@ -90,9 +97,9 @@ class MainViewController: BaseViewController {
                 return;
             }
             
-            let user = User()
-            user.setUser(input: response as? NSDictionary)
-            AppConfig.sharedInstance.saveUser(user: user)
+            self._user = User()
+            self._user?.setUser(input: response as? NSDictionary)
+            AppConfig.sharedInstance.saveUser(user: self._user!)
             
         };
         
@@ -156,6 +163,7 @@ class MainViewController: BaseViewController {
             _tripStatus = .start
             _locationCount = 0
             updateMap(location: loc)
+            _startLocation = loc
         }
     }
     
@@ -167,6 +175,42 @@ class MainViewController: BaseViewController {
             _customMapView?.drawRoute(locations: _tripLocations)
             _tripStatus = .end
             _tripLocations.removeAll()
+            _endLocation = loc
+            submitTrip()
+  
+            activityIndicator.startAnimating()
+        }
+    }
+//Mark: - Trip Complete Methods
+    
+    func prepareTrip() -> Trip {
+        
+        let trip = Trip()
+        trip.userId = _user?.userId
+        trip.startLattitude = "\(_startLocation?.coordinate.latitude)"
+        trip.startLongitude = "\(_startLocation?.coordinate.longitude)"
+        trip.endLattitude   = "\(_endLocation?.coordinate.latitude)"
+        trip.endLongitude   = "\(_endLocation?.coordinate.longitude)"
+        return trip
+    }
+    
+    func submitTrip() {
+        let trip = prepareTrip()
+        let tripDict = trip.getDictionary()
+        
+        TripService().postTrip(input: tripDict) { (response, error) in
+            self.activityIndicator.stopAnimating()
+            guard error == nil else {
+                print(error!)
+                return;
+            }
+            guard response != nil else {
+                print("empty response")
+                return;
+            }
+            
+            let resp = response as? NSDictionary
+            print(resp!)
         }
     }
 

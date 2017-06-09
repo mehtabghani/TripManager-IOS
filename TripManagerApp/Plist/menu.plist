@@ -9,6 +9,6 @@
 	<key>Profile</key>
 	<string>showProfileController</string>
 	<key>Logout</key>
-	<string>showLogoutController</string>
+	<string>logout</string>
 </dict>
 </plist>

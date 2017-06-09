@@ -19,8 +19,8 @@ class User: NSObject {
             return;
         }
         
-        userId      = String(describing: input?[KeyConstants.user_id])
-        userName    = input?[KeyConstants.user_name] as! String?
+        userId      = input?[KeyConstants.user_id] as? String
+        userName    = input?[KeyConstants.user_name] as? String
     }
     
     func getUser() -> Dictionary<String, Any> {

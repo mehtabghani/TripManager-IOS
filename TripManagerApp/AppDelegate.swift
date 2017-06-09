@@ -81,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         readMenuPList()
     }
     
-    func setRootViewController(viewController controller: BaseViewController) {
+    func setRootViewController(viewController controller: UIViewController) {
         window?.rootViewController = controller
     }
     
@@ -99,6 +99,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = SignUpViewController(nibName: "SignUpView", bundle: nil)
         setRootViewController(viewController: controller)
     }
+    
+    func showMainController() {
+        setRootViewController(viewController: drawerController!)
+    }
+    
 // MARK: - Side Menu Methods
     
     func showStartTripController() {
@@ -113,7 +118,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-    func showLogoutController() {
+    func logout() {
+        
     }
     
     func showTripHistory() {
@@ -129,17 +135,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let methodName = menuDict?[menuName]
         perform(Selector(methodName!))
     }
+    
 // MARK: - Menu Plist Method
+    
     func readMenuPList () {
-        
-        if let url = Bundle.main.url(forResource:"menu", withExtension: "plist") {
-            do {
-                let data = try Data(contentsOf:url)
-                menuDict = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String:String]
-            } catch {
-                print(error)
-            }
-        }
+        menuDict = Utils.getDictionaryFromPlist(plistName: "menu")
     }
 
 }

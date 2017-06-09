@@ -79,9 +79,10 @@ class LoginViewController: BaseViewController  {
     }
     
     func handleSuccess(response: Any?) {
-        print("Response: \(response!)")
         
         if let res = response as? NSDictionary {
+            print("Response: \(res)")
+
             let userId = res["user_id"] as? String
             let accessToken = res["access_token"] as? String
             AppConfig.sharedInstance.saveAccesstoken(accessToken!)
@@ -90,6 +91,7 @@ class LoginViewController: BaseViewController  {
             let user = User()
             user.userId = userId
             AppConfig.sharedInstance.saveUser(user: user)
+            AppDelegate.getInstance().showMainController()
             
         }
     }
