@@ -44,7 +44,7 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Trip Manager"
-        showLoginIfRequired()
+        setup()
         showMenuButton()
     }
 
@@ -58,17 +58,6 @@ class MainViewController: BaseViewController {
     
 // MARK: -
 
-    func showLoginIfRequired() {
-        
-        guard  AppConfig.sharedInstance.getToken() == nil else {
-            setup()
-            return;
-        }
-        
-        AppDelegate.getInstance().showLoginController();
-        
-    }
-    
     func setup() {
         _profileImageView.layer.cornerRadius = _profileImageView.frame.height/2
         _profileImageView.layer.masksToBounds = true

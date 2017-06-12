@@ -29,7 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //let controller = MainViewController(nibName: "MainView", bundle: nil)
  
-        initMenuController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        showLoginIfRequired()
  
         return true
     }
@@ -62,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func initMenuController () {
+    func showDrawerController () {
         let mainViewController   = MainViewController(nibName: "MainView", bundle: nil)
         let leftViewController   = MenuViewController(nibName: "MenuView", bundle: nil)
         drawerController         = DrawerController()
@@ -72,12 +75,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         drawerController?.setViewController(leftViewController, side: .left)
         
         let width = Float(UIScreen.main.bounds.width)
+        let drawerWidth = drawerController?.getDrawerWidth(side: .left)
+        print(drawerWidth)
         drawerController?.setDrawerWidth(drawerWidth: width * Float(Constants.drawer_width_factor), side: .left)
-
-        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = drawerController
-        window?.makeKeyAndVisible()
-        
+
         readMenuPList()
     }
     
@@ -101,7 +103,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func showMainController() {
-        setRootViewController(viewController: drawerController!)
+        let mainViewController   = MainViewController(nibName: "MainView", bundle: nil)
+        showViewController(viewController: mainViewController)
     }
     
 // MARK: - Side Menu Methods
@@ -113,8 +116,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        let controller = MainViewController(nibName: "MainView", bundle: nil)
-        showViewController(viewController: controller)
+       showMainController()
 
     }
     
@@ -140,6 +142,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func readMenuPList () {
         menuDict = Utils.getDictionaryFromPlist(plistName: "menu")
+    }
+    
+    
+    func showLoginIfRequired() {
+        
+        guard  AppConfig.sharedInstance.getToken() == nil else {
+            showDrawerController()
+            return;
+        }
+        
+        showLoginController()
+        
     }
 
 }

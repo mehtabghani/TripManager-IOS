@@ -91,7 +91,7 @@ class LoginViewController: BaseViewController  {
             let user = User()
             user.userId = userId
             AppConfig.sharedInstance.saveUser(user: user)
-            AppDelegate.getInstance().showMainController()
+            AppDelegate.getInstance().showDrawerController()
             
         }
     }
