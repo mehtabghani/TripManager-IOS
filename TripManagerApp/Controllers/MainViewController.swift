@@ -133,7 +133,7 @@ class MainViewController: BaseViewController {
             
             // less than 200 meters location won't be used
             if  self._lastLocation != nil && location.distance(from: self._lastLocation!) < 200 {
-                print(location.distance(from: self._lastLocation!))
+                //print(location.distance(from: self._lastLocation!))
                 return
             }
             
@@ -176,10 +176,10 @@ class MainViewController: BaseViewController {
         
         let trip = Trip()
         trip.userId = _user?.userId
-        trip.startLattitude = "\(_startLocation?.coordinate.latitude)"
-        trip.startLongitude = "\(_startLocation?.coordinate.longitude)"
-        trip.endLattitude   = "\(_endLocation?.coordinate.latitude)"
-        trip.endLongitude   = "\(_endLocation?.coordinate.longitude)"
+        trip.startLattitude = String(format: "%f", _startLocation!.coordinate.latitude)
+        trip.startLongitude = String(format: "%f", _startLocation!.coordinate.longitude)
+        trip.endLattitude   = String(format: "%f", _endLocation!.coordinate.latitude)
+        trip.endLongitude   = String(format: "%f", _endLocation!.coordinate.longitude)
         return trip
     }
     

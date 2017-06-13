@@ -14,6 +14,9 @@ struct KeyConstants {
     static let user_id = "user_id"
     static let user_name = "user_name"
     static let user = "user"
+    
+    static let trip_id = "trip_id"
+
 
 
 }

@@ -75,8 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         drawerController?.setViewController(leftViewController, side: .left)
         
         let width = Float(UIScreen.main.bounds.width)
-        let drawerWidth = drawerController?.getDrawerWidth(side: .left)
-        print(drawerWidth)
         drawerController?.setDrawerWidth(drawerWidth: width * Float(Constants.drawer_width_factor), side: .left)
         window?.rootViewController = drawerController
 
@@ -120,17 +118,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-    func logout() {
-        
-    }
-    
+   
     func showTripHistory() {
-
+        
+        if  navController?.topViewController is TripHistoryViewController  {
+            self.drawerController?.closeSide()
+            return
+        }
+        
+        let controller = TripHistoryViewController(nibName: "TripHistoryView", bundle: nil);
+        showViewController(viewController: controller)
     }
     
     func showProfileController() {
         let controller = ProfileViewController(nibName: "ProfileView", bundle: nil)
         showViewController(viewController: controller)
+    }
+    
+    func logout() {
+        
     }
     
     func navigateToMenu(menuName: String) {

@@ -40,6 +40,8 @@
 		1BC1AECF1ED450D000869AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */; };
 		1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1AED01ED4544800869AA1 /* SignUpView.xib */; };
 		1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1AED21ED462D000869AA1 /* MainView.xib */; };
+		1BD6B6801EEFD3D600162ABF /* TripHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6B67E1EEFD3D600162ABF /* TripHistoryViewController.swift */; };
+		1BD6B6831EEFD53200162ABF /* TripHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6B6821EEFD53200162ABF /* TripHistoryView.xib */; };
 		1BE2EC8F1EE7DDFA0038F257 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2EC8D1EE7DDFA0038F257 /* ProfileViewController.swift */; };
 		1BE2EC921EE7DE4E0038F257 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2EC911EE7DE4E0038F257 /* ProfileView.xib */; };
 		AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF95C9B0B0FEEB50BD3B712 /* Pods_TripManagerApp.framework */; };
@@ -83,6 +85,8 @@
 		1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1BC1AED01ED4544800869AA1 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		1BC1AED21ED462D000869AA1 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		1BD6B67E1EEFD3D600162ABF /* TripHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripHistoryViewController.swift; sourceTree = "<group>"; };
+		1BD6B6821EEFD53200162ABF /* TripHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripHistoryView.xib; sourceTree = "<group>"; };
 		1BE2EC8D1EE7DDFA0038F257 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1BE2EC911EE7DE4E0038F257 /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		43BE7438396CA89A5D83D52C /* Pods-TripManagerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripManagerApp/Pods-TripManagerApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */,
 				1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */,
 				1BE2EC8D1EE7DDFA0038F257 /* ProfileViewController.swift */,
+				1BD6B67E1EEFD3D600162ABF /* TripHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		1B1DB1C01ECECF7400600AA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1BD6B6821EEFD53200162ABF /* TripHistoryView.xib */,
 				1BE2EC911EE7DE4E0038F257 /* ProfileView.xib */,
 				1BC1AED21ED462D000869AA1 /* MainView.xib */,
 				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
@@ -350,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD6B6831EEFD53200162ABF /* TripHistoryView.xib in Resources */,
 				1BE2EC921EE7DE4E0038F257 /* ProfileView.xib in Resources */,
 				1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */,
 				1BB8533F1EE572DC0023E821 /* menu.plist in Resources */,
@@ -419,6 +426,7 @@
 			files = (
 				1BC1AECB1ED44B0600869AA1 /* AppConfig.swift in Sources */,
 				1BC18D5D1EDD4B9100D1578D /* MenuViewController.swift in Sources */,
+				1BD6B6801EEFD3D600162ABF /* TripHistoryViewController.swift in Sources */,
 				1BE2EC8F1EE7DDFA0038F257 /* ProfileViewController.swift in Sources */,
 				1B47D9FC1EDFEA0400025710 /* KeyConstants.swift in Sources */,
 				1BA6D5D21EEA82BF009C397A /* Trip.swift in Sources */,

@@ -18,7 +18,7 @@ extension LocationManager : CLLocationManagerDelegate {
             return;
         }
         
-        print("Latest location \(locations.first)");
+       // print("Latest location \(locations.first)");
 
         onCurrentLocationUpdate.fire(locations.first!)
         setCurrentLocation(location: locations.first!)
