@@ -83,7 +83,7 @@ class LoginViewController: BaseViewController  {
         if let res = response as? NSDictionary {
             print("Response: \(res)")
 
-            let userId = res["user_id"] as? String
+            let userId = res["user_id"] as? Int
             let accessToken = res["access_token"] as? String
             AppConfig.sharedInstance.saveAccesstoken(accessToken!)
             

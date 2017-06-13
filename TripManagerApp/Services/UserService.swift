@@ -13,7 +13,7 @@ class UserService: BaseService {
     private let routeLogin: String = "user"
     
     
-    func getUser(userID: String, completionBlock: @escaping completionBlock) {
+    func getUser(userID: Int, completionBlock: @escaping completionBlock) {
         let url = routeLogin.appending("/\(userID)")
         httpRequestManager?.getRequest(url: getURL(route: url), completionBlock: completionBlock)
     }
