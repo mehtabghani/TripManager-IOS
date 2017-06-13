@@ -86,7 +86,7 @@ class TripHistoryViewController: BaseViewController {
 
 extension TripHistoryViewController : UITableViewDelegate {
     
-    func TripHistoryViewController.tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
 }
