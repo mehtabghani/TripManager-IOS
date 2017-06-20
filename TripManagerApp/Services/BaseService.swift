@@ -19,7 +19,7 @@ enum Service {
 class BaseService: NSObject {
     
     
-    let baseUrl = "http://localhost:3001/"
+    let baseUrl = "http://172.16.0.197:3001/"
     var httpRequestManager : HTTPRequestManager?
     
     

@@ -87,7 +87,9 @@ class TripHistoryViewController: BaseViewController {
 extension TripHistoryViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let trip:Trip = (trips?[indexPath.row])!
+
+        AppDelegate.getInstance().showTripDetailController(trip: trip)
     }
 }
 
@@ -101,7 +103,8 @@ extension TripHistoryViewController : UITableViewDataSource {
         
         // set the text from the data model
         let trip:Trip = (trips?[indexPath.row])!
-        cell.textLabel?.text = "\(trip.tripId!)"
+
+        cell.textLabel?.text = "\(trip.getStartDateString()) - \(trip.getEndDateString()) "
         
         return cell
     }

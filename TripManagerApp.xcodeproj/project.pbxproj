@@ -12,6 +12,9 @@
 		1B1DB1B01ECEBDCC00600AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DB1AE1ECEBDCC00600AA6 /* LaunchScreen.storyboard */; };
 		1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */; };
 		1B1DB1CB1ECF031D00600AA6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */; };
+		1B21B36B1EF90EA300B379F7 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21B3691EF90EA300B379F7 /* TripDetailViewController.swift */; };
+		1B21B36E1EF90EC500B379F7 /* TripDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B21B36D1EF90EC500B379F7 /* TripDetailView.xib */; };
+		1B21B3701EF93B6300B379F7 /* KWDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B21B36F1EF93B6300B379F7 /* KWDrawerController.framework */; };
 		1B47D9FA1EDFE9E700025710 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47D9F91EDFE9E700025710 /* Constants.swift */; };
 		1B47D9FC1EDFEA0400025710 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47D9FB1EDFEA0400025710 /* KeyConstants.swift */; };
 		1B47D9FF1EDFEAFD00025710 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47D9FE1EDFEAFD00025710 /* User.swift */; };
@@ -32,7 +35,6 @@
 		1BBB09DD1ED3144000F73B77 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB09DC1ED3144000F73B77 /* CustomTextField.swift */; };
 		1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBB09DE1ED3287000F73B77 /* Alamofire.framework */; };
 		1BC18D591EDD358200D1578D /* BaseMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC18D581EDD358200D1578D /* BaseMapView.swift */; };
-		1BC18D5B1EDD498A00D1578D /* KWDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC18D5A1EDD498A00D1578D /* KWDrawerController.framework */; };
 		1BC18D5D1EDD4B9100D1578D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */; };
 		1BC18D5F1EDD4BCC00D1578D /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC18D5E1EDD4BCC00D1578D /* MenuView.xib */; };
 		1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1AEC81ED4113000869AA1 /* HTTPRequestManager.swift */; };
@@ -55,6 +57,10 @@
 		1B1DB1B11ECEBDCC00600AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B21B3671EF8FF8800B379F7 /* DateToolsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateToolsSwift.framework; path = "../../../../../../Users/mehtab/Library/Developer/Xcode/DerivedData/TripManagerApp-gvizxtckzxzhxfgyycnkpcothbrt/Build/Products/Debug-iphonesimulator/DateToolsSwift/DateToolsSwift.framework"; sourceTree = "<group>"; };
+		1B21B3691EF90EA300B379F7 /* TripDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		1B21B36D1EF90EC500B379F7 /* TripDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripDetailView.xib; sourceTree = "<group>"; };
+		1B21B36F1EF93B6300B379F7 /* KWDrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KWDrawerController.framework; path = "Pods/../build/Debug-iphoneos/KWDrawerController/KWDrawerController.framework"; sourceTree = "<group>"; };
 		1B47D9F91EDFE9E700025710 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
 		1B47D9FB1EDFEA0400025710 /* KeyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyConstants.swift; path = Constants/KeyConstants.swift; sourceTree = "<group>"; };
 		1B47D9FE1EDFEAFD00025710 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
@@ -99,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC18D5B1EDD498A00D1578D /* KWDrawerController.framework in Frameworks */,
+				1B21B3701EF93B6300B379F7 /* KWDrawerController.framework in Frameworks */,
 				1BB4CE161ED6A6B0003505DB /* Signals.framework in Frameworks */,
 				1BBB09DF1ED3287000F73B77 /* Alamofire.framework in Frameworks */,
 				AB8716028A113EEAFB04D75D /* Pods_TripManagerApp.framework in Frameworks */,
@@ -155,11 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				1B1DB1CA1ECF031D00600AA6 /* BaseViewController.swift */,
-				1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */,
-				1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */,
 				1BBB09D11ED2FA7300F73B77 /* LoginViewController.swift */,
-				1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */,
+				1B1DB1BC1ECECF4D00600AA6 /* MainViewController.swift */,
+				1BC18D5C1EDD4B9100D1578D /* MenuViewController.swift */,
 				1BE2EC8D1EE7DDFA0038F257 /* ProfileViewController.swift */,
+				1BC1AECE1ED450D000869AA1 /* SignUpViewController.swift */,
+				1B21B3691EF90EA300B379F7 /* TripDetailViewController.swift */,
 				1BD6B67E1EEFD3D600162ABF /* TripHistoryViewController.swift */,
 			);
 			path = Controllers;
@@ -168,13 +175,14 @@
 		1B1DB1C01ECECF7400600AA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1BD6B6821EEFD53200162ABF /* TripHistoryView.xib */,
-				1BE2EC911EE7DE4E0038F257 /* ProfileView.xib */,
-				1BC1AED21ED462D000869AA1 /* MainView.xib */,
-				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
-				1BBB09D51ED2FAA400F73B77 /* LoginView.xib */,
 				1B6B452F1ED55EEF00612EC7 /* CustomMapView.xib */,
+				1BBB09D51ED2FAA400F73B77 /* LoginView.xib */,
+				1BC1AED21ED462D000869AA1 /* MainView.xib */,
 				1BC18D5E1EDD4BCC00D1578D /* MenuView.xib */,
+				1BE2EC911EE7DE4E0038F257 /* ProfileView.xib */,
+				1BC1AED01ED4544800869AA1 /* SignUpView.xib */,
+				1B21B36D1EF90EC500B379F7 /* TripDetailView.xib */,
+				1BD6B6821EEFD53200162ABF /* TripHistoryView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +287,8 @@
 		CC0611BF5F32015397553A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B21B36F1EF93B6300B379F7 /* KWDrawerController.framework */,
+				1B21B3671EF8FF8800B379F7 /* DateToolsSwift.framework */,
 				1BC18D601EDD546000D1578D /* SlideMenuControllerSwift.framework */,
 				1BC18D5A1EDD498A00D1578D /* KWDrawerController.framework */,
 				1BB4CE151ED6A6B0003505DB /* Signals.framework */,
@@ -365,6 +375,7 @@
 				1BC1AED31ED462D000869AA1 /* MainView.xib in Resources */,
 				1BC1AED11ED4544800869AA1 /* SignUpView.xib in Resources */,
 				1B6B45301ED55EEF00612EC7 /* CustomMapView.xib in Resources */,
+				1B21B36E1EF90EC500B379F7 /* TripDetailView.xib in Resources */,
 				1B1DB1AD1ECEBDCC00600AA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +455,7 @@
 				1B47DA011EDFEDB500025710 /* UserService.swift in Sources */,
 				1BC1AEC91ED4113000869AA1 /* HTTPRequestManager.swift in Sources */,
 				1B47D9FF1EDFEAFD00025710 /* User.swift in Sources */,
+				1B21B36B1EF90EA300B379F7 /* TripDetailViewController.swift in Sources */,
 				1BA6D5CE1EEA79A8009C397A /* Utils.swift in Sources */,
 				1B1DB1BE1ECECF4D00600AA6 /* MainViewController.swift in Sources */,
 				1BC18D591EDD358200D1578D /* BaseMapView.swift in Sources */,
@@ -562,6 +574,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9MWU5PC5GV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KWDrawerController",
+				);
 				INFOPLIST_FILE = TripManagerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,6 +593,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9MWU5PC5GV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KWDrawerController",
+				);
 				INFOPLIST_FILE = TripManagerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

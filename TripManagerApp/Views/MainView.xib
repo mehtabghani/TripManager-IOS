@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCm-qZ-1xx" userLabel="View - Map">
-                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="szX-3L-OFj" userLabel="Image View - Profile">
@@ -65,14 +65,14 @@
                 <constraint firstItem="PCm-qZ-1xx" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" id="ahK-CU-qAR"/>
                 <constraint firstItem="szX-3L-OFj" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" constant="22" id="cyz-u0-lFs"/>
                 <constraint firstAttribute="trailing" secondItem="p1T-4o-oI0" secondAttribute="trailing" constant="10" id="gQf-Dv-Tpy"/>
-                <constraint firstItem="PCm-qZ-1xx" firstAttribute="top" secondItem="hbH-4O-MW7" secondAttribute="top" constant="60" id="hd9-nw-CYQ"/>
+                <constraint firstItem="PCm-qZ-1xx" firstAttribute="top" secondItem="hbH-4O-MW7" secondAttribute="top" id="hd9-nw-CYQ"/>
                 <constraint firstAttribute="bottom" secondItem="PCm-qZ-1xx" secondAttribute="bottom" id="hrU-Rm-Yxj"/>
                 <constraint firstItem="p1T-4o-oI0" firstAttribute="leading" secondItem="hbH-4O-MW7" secondAttribute="leading" constant="10" id="k5M-Kc-o7r"/>
                 <constraint firstAttribute="trailing" secondItem="PCm-qZ-1xx" secondAttribute="trailing" id="p19-NS-CBU"/>
                 <constraint firstAttribute="trailing" secondItem="P2o-Ri-V5I" secondAttribute="trailing" constant="10" id="vFa-0b-Jet"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
-            <point key="canvasLocation" x="-814" y="-177"/>
+            <point key="canvasLocation" x="-814.5" y="-177.5"/>
         </view>
     </objects>
     <resources>

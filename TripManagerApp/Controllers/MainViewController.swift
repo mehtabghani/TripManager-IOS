@@ -101,6 +101,7 @@ class MainViewController: BaseViewController {
         
         let view: CustomMapView = UIView.fromNib()
         _customMapView = view
+        _customMapView?.frame = _mapView.frame
         _mapView.addSubview(_customMapView!)
         _mapView.bringSubview(toFront: _customMapView!)
     }

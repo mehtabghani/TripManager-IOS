@@ -118,7 +118,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-   
     func showTripHistory() {
         
         if  navController?.topViewController is TripHistoryViewController  {
@@ -128,6 +127,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let controller = TripHistoryViewController(nibName: "TripHistoryView", bundle: nil);
         showViewController(viewController: controller)
+    }
+    
+    func showTripDetailController (trip: Trip) {
+        let controller = TripDetailViewController(nibName: "TripDetailView", bundle: nil)
+        controller.setTrip(trip: trip)
+        navController?.pushViewController(controller, animated: true)
     }
     
     func showProfileController() {
